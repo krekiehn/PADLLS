@@ -1,0 +1,1203 @@
+CRITICAL:niftynet:2020-06-14 02:01:31,013: Failed to get iteration number from checkpoint path (/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models),
+please check config parameter: model_dir, and initial_iter
+CRITICAL:niftynet:2020-06-14 02:07:23,616: Failed to get iteration number from checkpoint path (/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models),
+please check config parameter: model_dir, and initial_iter
+INFO:niftynet:2020-06-14 02:15:50,250: starting segmentation application
+INFO:niftynet:2020-06-14 02:15:50,253: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-14 02:15:50,253: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-14 02:15:50,254: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-14 02:15:50,283: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-14 02:15:50,283: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-14 02:15:50,284: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-14 02:15:50,322: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-14 02:15:50,480: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+WARNING:niftynet:2020-06-14 02:15:50,508: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_loader.py:107: The name tf.logging.debug is deprecated. Please use tf.compat.v1.logging.debug instead.
+
+INFO:niftynet:2020-06-14 02:15:51,527: Image reader: loading 87 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 02:15:51,528: Image reader: loading 87 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 02:15:52,030: Image reader: loading 44 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 02:15:52,030: Image reader: loading 44 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 02:15:52,057: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 02:15:52,061: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 02:15:52,080: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 02:15:52,081: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 02:15:52,082: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 02:15:52,088: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 02:15:52,117: using DenseVNet
+WARNING:niftynet:2020-06-14 02:15:52,118: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/application/base_application.py:203: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:niftynet:2020-06-14 02:15:52,141: Initialising Dataset from 87 subjects...
+INFO:niftynet:2020-06-14 02:15:52,369: Initialising Dataset from 44 subjects...
+WARNING:niftynet:2020-06-14 02:15:52,516: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:60: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:niftynet:2020-06-14 02:15:52,526: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:68: The name tf.matrix_solve_ls is deprecated. Please use tf.linalg.lstsq instead.
+
+WARNING:niftynet:2020-06-14 02:15:53,354: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 02:15:56,061: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/linear_resize.py:60: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:niftynet:2020-06-14 02:15:57,033: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 02:15:57,355: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_optimiser.py:31: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:niftynet:2020-06-14 02:15:57,362: Import [dice] from /Users/jayasuriyasenthilvelan/niftynet/extensions/dense_vnet_abdominal_ct/dice_hinge.py.
+WARNING:niftynet:2020-06-14 02:16:01,455: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_variables.py:188: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:niftynet:2020-06-14 02:16:01,457: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_tensorboard.py:49: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:niftynet:2020-06-14 02:16:17,421: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:niftynet:2020-06-14 02:16:18,483: Restoring parameters from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt-3000
+INFO:niftynet:2020-06-14 02:24:33,331: starting segmentation application
+INFO:niftynet:2020-06-14 02:24:33,332: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-14 02:24:33,332: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-14 02:24:33,333: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-14 02:24:33,348: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-14 02:24:33,348: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-14 02:24:33,348: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+WARNING:niftynet:2020-06-14 02:24:33,382: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-14 02:24:33,383: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-14 02:24:33,390: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-14 02:24:33,610: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-14 02:24:34,678: Image reader: loading 87 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 02:24:34,678: Image reader: loading 87 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 02:24:35,177: Image reader: loading 44 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 02:24:35,177: Image reader: loading 44 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 02:24:35,202: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 02:24:35,206: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 02:24:35,214: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 02:24:35,214: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 02:24:35,214: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 02:24:35,221: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 02:24:35,250: using DenseVNet
+WARNING:niftynet:2020-06-14 02:24:35,250: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/application/base_application.py:203: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:niftynet:2020-06-14 02:24:35,257: Initialising Dataset from 87 subjects...
+INFO:niftynet:2020-06-14 02:24:35,376: Initialising Dataset from 44 subjects...
+WARNING:niftynet:2020-06-14 02:24:35,486: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:60: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:niftynet:2020-06-14 02:24:35,498: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:68: The name tf.matrix_solve_ls is deprecated. Please use tf.linalg.lstsq instead.
+
+WARNING:niftynet:2020-06-14 02:24:35,898: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 02:24:38,217: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/linear_resize.py:60: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:niftynet:2020-06-14 02:24:39,149: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 02:24:39,438: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_optimiser.py:31: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:niftynet:2020-06-14 02:24:39,444: Import [dice] from /Users/jayasuriyasenthilvelan/niftynet/extensions/dense_vnet_abdominal_ct/dice_hinge.py.
+WARNING:niftynet:2020-06-14 02:24:43,672: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_variables.py:188: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:niftynet:2020-06-14 02:24:44,675: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_tensorboard.py:49: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:niftynet:2020-06-14 02:24:54,014: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:niftynet:2020-06-14 02:24:54,907: Restoring parameters from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt-3000
+INFO:niftynet:2020-06-14 02:28:17,287: training iter 3001, total_loss=0.7822926640510559, loss=0.7822926640510559 (201.017467s)
+INFO:niftynet:2020-06-14 02:28:17,371: cleaning up...
+INFO:niftynet:2020-06-14 02:28:23,638: iter 3001 saved: /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt
+INFO:niftynet:2020-06-14 02:28:23,639: stopping sampling threads
+INFO:niftynet:2020-06-14 02:28:23,970: SegmentationApplication stopped (time in second 210.35).
+INFO:niftynet:2020-06-14 10:58:16,666: starting segmentation application
+INFO:niftynet:2020-06-14 10:58:16,667: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-14 10:58:16,667: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-14 10:58:16,668: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-14 10:58:16,682: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-14 10:58:16,683: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-14 10:58:16,683: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+WARNING:niftynet:2020-06-14 10:58:16,701: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-14 10:58:16,701: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-14 10:58:16,707: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-14 10:58:16,865: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-14 10:58:17,845: Image reader: loading 87 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 10:58:17,846: Image reader: loading 87 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 10:58:18,349: Image reader: loading 44 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 10:58:18,349: Image reader: loading 44 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 10:58:18,372: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 10:58:18,377: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 10:58:18,386: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 10:58:18,386: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 10:58:18,386: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 10:58:18,393: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 10:58:18,420: using DenseVNet
+WARNING:niftynet:2020-06-14 10:58:18,420: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/application/base_application.py:203: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:niftynet:2020-06-14 10:58:18,426: Initialising Dataset from 87 subjects...
+INFO:niftynet:2020-06-14 10:58:18,563: Initialising Dataset from 44 subjects...
+WARNING:niftynet:2020-06-14 10:58:18,681: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:60: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:niftynet:2020-06-14 10:58:18,693: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:68: The name tf.matrix_solve_ls is deprecated. Please use tf.linalg.lstsq instead.
+
+WARNING:niftynet:2020-06-14 10:58:19,280: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 10:58:21,729: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/linear_resize.py:60: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:niftynet:2020-06-14 10:58:22,682: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 10:58:23,064: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_optimiser.py:31: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:niftynet:2020-06-14 10:58:23,070: Import [dice] from /Users/jayasuriyasenthilvelan/niftynet/extensions/dense_vnet_abdominal_ct/dice_hinge.py.
+WARNING:niftynet:2020-06-14 10:58:27,156: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_variables.py:188: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:niftynet:2020-06-14 10:58:28,166: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_tensorboard.py:49: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:niftynet:2020-06-14 10:58:39,115: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_model.py:108: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:niftynet:2020-06-14 10:58:39,516: Restoring parameters from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt-3001
+INFO:niftynet:2020-06-14 11:02:03,896: training iter 3002, total_loss=0.9415033459663391, loss=0.9415033459663391 (201.990559s)
+INFO:niftynet:2020-06-14 11:04:39,632: training iter 3003, total_loss=1.2263771295547485, loss=1.2263771295547485 (155.645871s)
+INFO:niftynet:2020-06-14 11:07:21,758: training iter 3004, total_loss=2.8216702938079834, loss=2.8216702938079834 (162.105604s)
+INFO:niftynet:2020-06-14 11:10:37,373: training iter 3005, total_loss=1.362020492553711, loss=1.362020492553711 (195.591910s)
+WARNING:niftynet:2020-06-14 11:13:27,614: User cancelled application
+INFO:niftynet:2020-06-14 11:13:27,627: cleaning up...
+INFO:niftynet:2020-06-14 11:13:27,644: stopping sampling threads
+INFO:niftynet:2020-06-14 11:13:34,430: iter 3006 saved: /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt
+WARNING:niftynet:2020-06-14 11:13:34,834: stopped early, incomplete iterations.
+INFO:niftynet:2020-06-14 11:13:34,834: SegmentationApplication stopped (time in second 896.14).
+INFO:niftynet:2020-06-14 11:15:22,045: starting segmentation application
+INFO:niftynet:2020-06-14 11:15:22,046: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-14 11:15:22,046: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-14 11:15:22,047: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-14 11:15:22,061: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-14 11:15:22,061: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-14 11:15:22,062: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+WARNING:niftynet:2020-06-14 11:15:22,083: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-14 11:15:22,083: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-14 11:15:22,089: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-14 11:15:22,229: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-14 11:15:23,176: Image reader: loading 87 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 11:15:23,176: Image reader: loading 87 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 11:15:23,688: Image reader: loading 44 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-14 11:15:23,688: Image reader: loading 44 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-14 11:15:23,708: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 11:15:23,711: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 11:15:23,721: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 11:15:23,721: reading size of preprocessed images
+WARNING:niftynet:2020-06-14 11:15:23,722: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-14 11:15:23,734: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-14 11:15:23,757: using DenseVNet
+WARNING:niftynet:2020-06-14 11:15:23,757: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/application/base_application.py:203: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:niftynet:2020-06-14 11:15:23,762: Initialising Dataset from 87 subjects...
+INFO:niftynet:2020-06-14 11:15:23,870: Initialising Dataset from 44 subjects...
+WARNING:niftynet:2020-06-14 11:15:23,976: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:60: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:niftynet:2020-06-14 11:15:23,986: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:68: The name tf.matrix_solve_ls is deprecated. Please use tf.linalg.lstsq instead.
+
+WARNING:niftynet:2020-06-14 11:15:24,358: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 11:15:26,675: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/linear_resize.py:60: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:niftynet:2020-06-14 11:15:27,924: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-14 11:15:28,406: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_optimiser.py:31: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:niftynet:2020-06-14 11:15:28,411: Import [dice] from /Users/jayasuriyasenthilvelan/niftynet/extensions/dense_vnet_abdominal_ct/dice_hinge.py.
+WARNING:niftynet:2020-06-14 11:15:34,026: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_variables.py:188: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:niftynet:2020-06-14 11:15:35,316: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_tensorboard.py:49: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:niftynet:2020-06-14 11:15:45,581: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_model.py:108: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:niftynet:2020-06-14 11:15:46,063: Restoring parameters from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt-3000
+INFO:niftynet:2020-06-14 11:19:02,989: training iter 3001, total_loss=1.0267308950424194, loss=1.0267308950424194 (194.922402s)
+INFO:niftynet:2020-06-14 11:21:47,676: training iter 3002, total_loss=0.28422629833221436, loss=0.28422629833221436 (164.607829s)
+INFO:niftynet:2020-06-14 11:24:31,852: training iter 3003, total_loss=1.3124486207962036, loss=1.3124486207962036 (164.159313s)
+INFO:niftynet:2020-06-14 11:27:39,845: training iter 3004, total_loss=1.3670765161514282, loss=1.3670765161514282 (187.975488s)
+INFO:niftynet:2020-06-14 11:30:38,642: training iter 3005, total_loss=1.4101505279541016, loss=1.4101505279541016 (178.773859s)
+INFO:niftynet:2020-06-14 11:33:47,748: training iter 3006, total_loss=1.6996315717697144, loss=1.6996315717697144 (189.086915s)
+INFO:niftynet:2020-06-14 11:36:42,270: training iter 3007, total_loss=1.031225562095642, loss=1.031225562095642 (174.509996s)
+INFO:niftynet:2020-06-14 11:39:43,091: training iter 3008, total_loss=2.996304750442505, loss=2.996304750442505 (180.803593s)
+INFO:niftynet:2020-06-14 11:42:34,100: training iter 3009, total_loss=0.8784143328666687, loss=0.8784143328666687 (170.989370s)
+INFO:niftynet:2020-06-14 11:45:29,358: training iter 3010, total_loss=1.420040488243103, loss=1.420040488243103 (175.242732s)
+INFO:niftynet:2020-06-14 11:48:47,624: training iter 3011, total_loss=0.8991219997406006, loss=0.8991219997406006 (198.255724s)
+INFO:niftynet:2020-06-14 11:51:43,607: training iter 3012, total_loss=4.18273401260376, loss=4.18273401260376 (175.970080s)
+INFO:niftynet:2020-06-14 11:54:39,930: training iter 3013, total_loss=1.8540925979614258, loss=1.8540925979614258 (176.308070s)
+INFO:niftynet:2020-06-14 11:57:22,149: training iter 3014, total_loss=2.075619697570801, loss=2.075619697570801 (162.201844s)
+INFO:niftynet:2020-06-14 12:00:22,006: training iter 3015, total_loss=2.209805727005005, loss=2.209805727005005 (179.840380s)
+INFO:niftynet:2020-06-14 12:03:12,481: training iter 3016, total_loss=1.1238614320755005, loss=1.1238614320755005 (170.458578s)
+INFO:niftynet:2020-06-14 12:06:02,645: training iter 3017, total_loss=1.649503231048584, loss=1.649503231048584 (170.146580s)
+INFO:niftynet:2020-06-14 12:08:53,185: training iter 3018, total_loss=1.9955883026123047, loss=1.9955883026123047 (170.526493s)
+INFO:niftynet:2020-06-14 12:12:04,196: training iter 3019, total_loss=1.0157963037490845, loss=1.0157963037490845 (190.993840s)
+INFO:niftynet:2020-06-14 12:15:33,062: training iter 3020, total_loss=0.8225696682929993, loss=0.8225696682929993 (208.841315s)
+INFO:niftynet:2020-06-14 12:18:28,188: training iter 3021, total_loss=1.0691502094268799, loss=1.0691502094268799 (175.001417s)
+INFO:niftynet:2020-06-14 12:21:32,698: training iter 3022, total_loss=1.414554476737976, loss=1.414554476737976 (184.488370s)
+INFO:niftynet:2020-06-14 12:24:35,503: training iter 3023, total_loss=1.5914816856384277, loss=1.5914816856384277 (182.787559s)
+INFO:niftynet:2020-06-14 12:27:30,149: training iter 3024, total_loss=0.6981339454650879, loss=0.6981339454650879 (174.633579s)
+INFO:niftynet:2020-06-14 12:31:08,359: training iter 3025, total_loss=0.8903172016143799, loss=0.8903172016143799 (218.192493s)
+INFO:niftynet:2020-06-14 12:34:22,169: training iter 3026, total_loss=0.7166884541511536, loss=0.7166884541511536 (193.786988s)
+INFO:niftynet:2020-06-14 12:37:13,385: training iter 3027, total_loss=1.5122920274734497, loss=1.5122920274734497 (171.199929s)
+INFO:niftynet:2020-06-14 12:39:54,223: training iter 3028, total_loss=0.6608463525772095, loss=0.6608463525772095 (160.822508s)
+INFO:niftynet:2020-06-14 12:42:36,677: training iter 3029, total_loss=1.212800145149231, loss=1.212800145149231 (162.438546s)
+INFO:niftynet:2020-06-14 12:45:11,681: training iter 3030, total_loss=1.025509238243103, loss=1.025509238243103 (154.986673s)
+INFO:niftynet:2020-06-14 12:47:40,820: training iter 3031, total_loss=0.6225296258926392, loss=0.6225296258926392 (149.120970s)
+INFO:niftynet:2020-06-14 12:50:13,864: training iter 3032, total_loss=1.3379589319229126, loss=1.3379589319229126 (153.024872s)
+INFO:niftynet:2020-06-14 12:52:39,995: training iter 3033, total_loss=0.754726231098175, loss=0.754726231098175 (146.116525s)
+INFO:niftynet:2020-06-14 12:55:15,965: training iter 3034, total_loss=0.9410733580589294, loss=0.9410733580589294 (155.953923s)
+INFO:niftynet:2020-06-14 12:57:52,767: training iter 3035, total_loss=1.2272268533706665, loss=1.2272268533706665 (156.779725s)
+INFO:niftynet:2020-06-14 13:00:27,049: training iter 3036, total_loss=1.1277254819869995, loss=1.1277254819869995 (154.267560s)
+INFO:niftynet:2020-06-14 13:02:54,718: training iter 3037, total_loss=0.7157557606697083, loss=0.7157557606697083 (147.649992s)
+INFO:niftynet:2020-06-14 13:05:27,237: training iter 3038, total_loss=0.620968759059906, loss=0.620968759059906 (152.500533s)
+INFO:niftynet:2020-06-14 13:08:04,027: training iter 3039, total_loss=0.6436032652854919, loss=0.6436032652854919 (156.776663s)
+INFO:niftynet:2020-06-14 13:10:57,571: training iter 3040, total_loss=1.5528148412704468, loss=1.5528148412704468 (173.523620s)
+INFO:niftynet:2020-06-14 13:13:32,864: training iter 3041, total_loss=0.9552227854728699, loss=0.9552227854728699 (155.209259s)
+INFO:niftynet:2020-06-14 13:16:03,485: training iter 3042, total_loss=1.3196160793304443, loss=1.3196160793304443 (150.603521s)
+INFO:niftynet:2020-06-14 13:18:36,698: training iter 3043, total_loss=0.6846362948417664, loss=0.6846362948417664 (153.194206s)
+INFO:niftynet:2020-06-14 13:21:07,008: training iter 3044, total_loss=0.941258430480957, loss=0.941258430480957 (150.287766s)
+INFO:niftynet:2020-06-14 13:23:44,134: training iter 3045, total_loss=0.8897600173950195, loss=0.8897600173950195 (157.096978s)
+INFO:niftynet:2020-06-14 13:26:14,369: training iter 3046, total_loss=1.3377481698989868, loss=1.3377481698989868 (150.216663s)
+INFO:niftynet:2020-06-14 13:28:41,142: training iter 3047, total_loss=0.5489686131477356, loss=0.5489686131477356 (146.760592s)
+INFO:niftynet:2020-06-14 13:31:14,586: training iter 3048, total_loss=0.5437864065170288, loss=0.5437864065170288 (153.424968s)
+INFO:niftynet:2020-06-14 13:34:01,097: training iter 3049, total_loss=0.5382038950920105, loss=0.5382038950920105 (166.485480s)
+INFO:niftynet:2020-06-14 13:36:35,995: training iter 3050, total_loss=0.9454635977745056, loss=0.9454635977745056 (154.877661s)
+INFO:niftynet:2020-06-14 13:39:21,847: training iter 3051, total_loss=0.9766189455986023, loss=0.9766189455986023 (165.833989s)
+INFO:niftynet:2020-06-14 13:41:48,782: training iter 3052, total_loss=1.359710693359375, loss=1.359710693359375 (146.919089s)
+INFO:niftynet:2020-06-14 13:44:17,730: training iter 3053, total_loss=0.6635598540306091, loss=0.6635598540306091 (148.935652s)
+INFO:niftynet:2020-06-14 13:46:50,129: training iter 3054, total_loss=0.9410097599029541, loss=0.9410097599029541 (152.380594s)
+INFO:niftynet:2020-06-14 13:49:16,174: training iter 3055, total_loss=0.7078471779823303, loss=0.7078471779823303 (146.024507s)
+INFO:niftynet:2020-06-14 13:51:43,678: training iter 3056, total_loss=0.5179443359375, loss=0.5179443359375 (147.486900s)
+INFO:niftynet:2020-06-14 13:54:09,240: training iter 3057, total_loss=0.7879667282104492, loss=0.7879667282104492 (145.544114s)
+INFO:niftynet:2020-06-14 13:56:39,096: training iter 3058, total_loss=0.5276815295219421, loss=0.5276815295219421 (149.839679s)
+INFO:niftynet:2020-06-14 13:59:12,314: training iter 3059, total_loss=1.973461627960205, loss=1.973461627960205 (153.201113s)
+INFO:niftynet:2020-06-14 14:01:54,199: training iter 3060, total_loss=0.6908573508262634, loss=0.6908573508262634 (161.869393s)
+INFO:niftynet:2020-06-14 14:04:25,515: training iter 3061, total_loss=0.8794631361961365, loss=0.8794631361961365 (151.222403s)
+INFO:niftynet:2020-06-14 14:06:59,648: training iter 3062, total_loss=0.5725484490394592, loss=0.5725484490394592 (154.119079s)
+INFO:niftynet:2020-06-14 14:09:29,946: training iter 3063, total_loss=1.2524672746658325, loss=1.2524672746658325 (150.283834s)
+INFO:niftynet:2020-06-14 14:12:03,451: training iter 3064, total_loss=0.4830877482891083, loss=0.4830877482891083 (153.482535s)
+INFO:niftynet:2020-06-14 14:14:37,344: training iter 3065, total_loss=0.9964970946311951, loss=0.9964970946311951 (153.876955s)
+INFO:niftynet:2020-06-14 14:17:11,149: training iter 3066, total_loss=0.5249709486961365, loss=0.5249709486961365 (153.787025s)
+INFO:niftynet:2020-06-14 14:19:42,807: training iter 3067, total_loss=0.5071994662284851, loss=0.5071994662284851 (151.642895s)
+INFO:niftynet:2020-06-14 14:22:13,793: training iter 3068, total_loss=0.8731050491333008, loss=0.8731050491333008 (150.967225s)
+INFO:niftynet:2020-06-14 14:24:39,096: training iter 3069, total_loss=0.49622973799705505, loss=0.49622973799705505 (145.286692s)
+INFO:niftynet:2020-06-14 14:27:06,654: training iter 3070, total_loss=0.5212377905845642, loss=0.5212377905845642 (147.537873s)
+INFO:niftynet:2020-06-14 14:29:39,309: training iter 3071, total_loss=0.6484262347221375, loss=0.6484262347221375 (152.637597s)
+INFO:niftynet:2020-06-14 14:32:05,775: training iter 3072, total_loss=0.9580934643745422, loss=0.9580934643745422 (146.448246s)
+INFO:niftynet:2020-06-14 14:34:33,459: training iter 3073, total_loss=0.47399410605430603, loss=0.47399410605430603 (147.669679s)
+INFO:niftynet:2020-06-14 14:37:00,980: training iter 3074, total_loss=0.6616321206092834, loss=0.6616321206092834 (147.450743s)
+INFO:niftynet:2020-06-14 14:39:56,999: training iter 3075, total_loss=0.8800055384635925, loss=0.8800055384635925 (175.996103s)
+INFO:niftynet:2020-06-14 14:42:26,525: training iter 3076, total_loss=0.5596072673797607, loss=0.5596072673797607 (149.504701s)
+INFO:niftynet:2020-06-14 14:44:52,695: training iter 3077, total_loss=1.0604679584503174, loss=1.0604679584503174 (146.154990s)
+INFO:niftynet:2020-06-14 14:47:21,226: training iter 3078, total_loss=1.0566993951797485, loss=1.0566993951797485 (148.509307s)
+INFO:niftynet:2020-06-14 14:49:49,213: training iter 3079, total_loss=0.6359168291091919, loss=0.6359168291091919 (147.973414s)
+INFO:niftynet:2020-06-14 14:52:17,240: training iter 3080, total_loss=0.7156038284301758, loss=0.7156038284301758 (148.010508s)
+INFO:niftynet:2020-06-14 14:54:40,251: training iter 3081, total_loss=0.9168686866760254, loss=0.9168686866760254 (142.940856s)
+INFO:niftynet:2020-06-14 14:57:06,855: training iter 3082, total_loss=0.659458339214325, loss=0.659458339214325 (146.583425s)
+INFO:niftynet:2020-06-14 14:59:34,124: training iter 3083, total_loss=0.4966616630554199, loss=0.4966616630554199 (147.254497s)
+INFO:niftynet:2020-06-14 15:02:07,571: training iter 3084, total_loss=0.5974847674369812, loss=0.5974847674369812 (153.426643s)
+INFO:niftynet:2020-06-14 15:04:39,271: training iter 3085, total_loss=0.4988762140274048, loss=0.4988762140274048 (151.679522s)
+INFO:niftynet:2020-06-14 15:07:12,190: training iter 3086, total_loss=0.455802321434021, loss=0.455802321434021 (152.901003s)
+INFO:niftynet:2020-06-14 15:09:38,306: training iter 3087, total_loss=0.46486786007881165, loss=0.46486786007881165 (146.101524s)
+INFO:niftynet:2020-06-14 15:12:08,929: training iter 3088, total_loss=0.8218048214912415, loss=0.8218048214912415 (150.605209s)
+INFO:niftynet:2020-06-14 15:14:37,339: training iter 3089, total_loss=0.8112182021141052, loss=0.8112182021141052 (148.389684s)
+INFO:niftynet:2020-06-14 15:17:06,582: training iter 3090, total_loss=0.7790277600288391, loss=0.7790277600288391 (149.226507s)
+INFO:niftynet:2020-06-14 15:19:44,925: training iter 3091, total_loss=1.230603814125061, loss=1.230603814125061 (158.324051s)
+INFO:niftynet:2020-06-14 15:22:11,545: training iter 3092, total_loss=0.5981061458587646, loss=0.5981061458587646 (146.596625s)
+INFO:niftynet:2020-06-14 15:24:49,720: training iter 3093, total_loss=0.7005020976066589, loss=0.7005020976066589 (158.151217s)
+INFO:niftynet:2020-06-14 15:27:16,561: training iter 3094, total_loss=1.1400179862976074, loss=1.1400179862976074 (146.825227s)
+INFO:niftynet:2020-06-14 15:29:44,566: training iter 3095, total_loss=1.2113276720046997, loss=1.2113276720046997 (147.981437s)
+INFO:niftynet:2020-06-14 15:32:17,321: training iter 3096, total_loss=0.5352994799613953, loss=0.5352994799613953 (152.733533s)
+INFO:niftynet:2020-06-14 15:35:10,176: training iter 3097, total_loss=0.5892912745475769, loss=0.5892912745475769 (172.833466s)
+INFO:niftynet:2020-06-14 15:37:37,491: training iter 3098, total_loss=0.5875709652900696, loss=0.5875709652900696 (147.294294s)
+INFO:niftynet:2020-06-14 15:40:03,663: training iter 3099, total_loss=0.49531713128089905, loss=0.49531713128089905 (146.155354s)
+INFO:niftynet:2020-06-14 15:42:33,866: training iter 3100, total_loss=0.8396719098091125, loss=0.8396719098091125 (150.186013s)
+INFO:niftynet:2020-06-14 15:45:08,986: training iter 3101, total_loss=0.4655306339263916, loss=0.4655306339263916 (154.990923s)
+INFO:niftynet:2020-06-14 15:47:32,197: training iter 3102, total_loss=0.4775889217853546, loss=0.4775889217853546 (143.190283s)
+INFO:niftynet:2020-06-14 15:50:00,199: training iter 3103, total_loss=0.4318523406982422, loss=0.4318523406982422 (147.981732s)
+INFO:niftynet:2020-06-14 15:52:28,549: training iter 3104, total_loss=0.7377052903175354, loss=0.7377052903175354 (148.336748s)
+INFO:niftynet:2020-06-14 15:54:57,950: training iter 3105, total_loss=0.6303910613059998, loss=0.6303910613059998 (149.377445s)
+INFO:niftynet:2020-06-14 15:57:32,519: training iter 3106, total_loss=0.4759862422943115, loss=0.4759862422943115 (154.552990s)
+INFO:niftynet:2020-06-14 15:59:57,914: training iter 3107, total_loss=0.9425022006034851, loss=0.9425022006034851 (145.376985s)
+INFO:niftynet:2020-06-14 16:02:22,165: training iter 3108, total_loss=0.455960750579834, loss=0.455960750579834 (144.233042s)
+INFO:niftynet:2020-06-14 16:04:47,533: training iter 3109, total_loss=1.238020420074463, loss=1.238020420074463 (145.352227s)
+INFO:niftynet:2020-06-14 16:07:11,786: training iter 3110, total_loss=0.788842499256134, loss=0.788842499256134 (144.235324s)
+INFO:niftynet:2020-06-14 16:09:40,944: training iter 3111, total_loss=0.776677668094635, loss=0.776677668094635 (149.140751s)
+INFO:niftynet:2020-06-14 16:12:09,003: training iter 3112, total_loss=0.8131987452507019, loss=0.8131987452507019 (148.038890s)
+INFO:niftynet:2020-06-14 16:14:37,600: training iter 3113, total_loss=0.8358593583106995, loss=0.8358593583106995 (148.575627s)
+INFO:niftynet:2020-06-14 16:17:00,664: training iter 3114, total_loss=0.5710416436195374, loss=0.5710416436195374 (143.043017s)
+INFO:niftynet:2020-06-14 16:19:25,213: training iter 3115, total_loss=0.8699377179145813, loss=0.8699377179145813 (144.534552s)
+INFO:niftynet:2020-06-14 16:21:48,091: training iter 3116, total_loss=1.0064735412597656, loss=1.0064735412597656 (142.861054s)
+INFO:niftynet:2020-06-14 16:24:13,462: training iter 3117, total_loss=0.9948799014091492, loss=0.9948799014091492 (145.353335s)
+INFO:niftynet:2020-06-14 16:26:38,934: training iter 3118, total_loss=0.7136141657829285, loss=0.7136141657829285 (145.458844s)
+INFO:niftynet:2020-06-14 16:29:17,900: training iter 3119, total_loss=0.43694213032722473, loss=0.43694213032722473 (158.952977s)
+INFO:niftynet:2020-06-14 16:31:53,100: training iter 3120, total_loss=1.21488618850708, loss=1.21488618850708 (155.180648s)
+INFO:niftynet:2020-06-14 16:34:22,566: training iter 3121, total_loss=0.46580496430397034, loss=0.46580496430397034 (149.349374s)
+INFO:niftynet:2020-06-14 16:36:46,343: training iter 3122, total_loss=0.6450038552284241, loss=0.6450038552284241 (143.752126s)
+INFO:niftynet:2020-06-14 16:39:15,248: training iter 3123, total_loss=0.8167311549186707, loss=0.8167311549186707 (148.886551s)
+INFO:niftynet:2020-06-14 16:41:41,767: training iter 3124, total_loss=0.4337618052959442, loss=0.4337618052959442 (146.500886s)
+INFO:niftynet:2020-06-14 16:44:06,448: training iter 3125, total_loss=0.48208391666412354, loss=0.48208391666412354 (144.666501s)
+INFO:niftynet:2020-06-14 16:46:38,233: training iter 3126, total_loss=0.43131616711616516, loss=0.43131616711616516 (151.771903s)
+INFO:niftynet:2020-06-14 16:49:01,050: training iter 3127, total_loss=0.46629711985588074, loss=0.46629711985588074 (142.797299s)
+INFO:niftynet:2020-06-14 16:51:23,810: training iter 3128, total_loss=1.0472625494003296, loss=1.0472625494003296 (142.737599s)
+INFO:niftynet:2020-06-14 16:53:51,188: training iter 3129, total_loss=0.4955383837223053, loss=0.4955383837223053 (147.357609s)
+INFO:niftynet:2020-06-14 16:56:16,760: training iter 3130, total_loss=0.7984635233879089, loss=0.7984635233879089 (145.558947s)
+INFO:niftynet:2020-06-14 16:58:43,497: training iter 3131, total_loss=1.2649565935134888, loss=1.2649565935134888 (146.716450s)
+INFO:niftynet:2020-06-14 17:01:05,870: training iter 3132, total_loss=0.5520226359367371, loss=0.5520226359367371 (142.354546s)
+INFO:niftynet:2020-06-14 17:03:32,447: training iter 3133, total_loss=0.493784636259079, loss=0.493784636259079 (146.555301s)
+INFO:niftynet:2020-06-14 17:06:02,927: training iter 3134, total_loss=0.6512846946716309, loss=0.6512846946716309 (150.457929s)
+INFO:niftynet:2020-06-14 17:08:46,052: training iter 3135, total_loss=0.6338963508605957, loss=0.6338963508605957 (163.100490s)
+INFO:niftynet:2020-06-14 17:11:10,588: training iter 3136, total_loss=0.5774939060211182, loss=0.5774939060211182 (144.524142s)
+INFO:niftynet:2020-06-14 17:13:44,460: training iter 3137, total_loss=0.44281864166259766, loss=0.44281864166259766 (153.855095s)
+INFO:niftynet:2020-06-14 17:16:15,034: training iter 3138, total_loss=0.4204641580581665, loss=0.4204641580581665 (150.559469s)
+INFO:niftynet:2020-06-14 17:18:37,317: training iter 3139, total_loss=0.8080028891563416, loss=0.8080028891563416 (142.266830s)
+INFO:niftynet:2020-06-14 17:21:15,154: training iter 3140, total_loss=0.39177021384239197, loss=0.39177021384239197 (157.816622s)
+INFO:niftynet:2020-06-14 17:23:40,507: training iter 3141, total_loss=0.39001914858818054, loss=0.39001914858818054 (145.248958s)
+INFO:niftynet:2020-06-14 17:26:03,875: training iter 3142, total_loss=1.1775561571121216, loss=1.1775561571121216 (143.350345s)
+INFO:niftynet:2020-06-14 17:28:36,985: training iter 3143, total_loss=0.35707390308380127, loss=0.35707390308380127 (153.085949s)
+INFO:niftynet:2020-06-14 17:31:32,384: training iter 3144, total_loss=0.806830108165741, loss=0.806830108165741 (175.380762s)
+INFO:niftynet:2020-06-14 17:33:58,884: training iter 3145, total_loss=0.6740329265594482, loss=0.6740329265594482 (146.476069s)
+INFO:niftynet:2020-06-14 17:36:23,531: training iter 3146, total_loss=0.44854435324668884, loss=0.44854435324668884 (144.629537s)
+INFO:niftynet:2020-06-14 17:38:50,532: training iter 3147, total_loss=0.4596504271030426, loss=0.4596504271030426 (146.981569s)
+INFO:niftynet:2020-06-14 17:41:21,798: training iter 3148, total_loss=0.4108330309391022, loss=0.4108330309391022 (151.243766s)
+INFO:niftynet:2020-06-14 17:43:53,993: training iter 3149, total_loss=0.9652747511863708, loss=0.9652747511863708 (152.170605s)
+INFO:niftynet:2020-06-14 17:46:27,277: training iter 3150, total_loss=0.805666446685791, loss=0.805666446685791 (153.269651s)
+INFO:niftynet:2020-06-14 17:48:59,639: training iter 3151, total_loss=0.3851214647293091, loss=0.3851214647293091 (152.341381s)
+INFO:niftynet:2020-06-14 17:51:26,744: training iter 3152, total_loss=0.9253047108650208, loss=0.9253047108650208 (147.075869s)
+INFO:niftynet:2020-06-14 17:53:56,943: training iter 3153, total_loss=0.3802374303340912, loss=0.3802374303340912 (150.182945s)
+INFO:niftynet:2020-06-14 17:56:24,552: training iter 3154, total_loss=1.0782774686813354, loss=1.0782774686813354 (147.594271s)
+INFO:niftynet:2020-06-14 17:58:51,853: training iter 3155, total_loss=0.5492688417434692, loss=0.5492688417434692 (147.283004s)
+INFO:niftynet:2020-06-14 18:01:20,591: training iter 3156, total_loss=0.39756718277931213, loss=0.39756718277931213 (148.718763s)
+INFO:niftynet:2020-06-14 18:03:52,683: training iter 3157, total_loss=0.42589113116264343, loss=0.42589113116264343 (152.070111s)
+INFO:niftynet:2020-06-14 18:06:16,742: training iter 3158, total_loss=0.8001391887664795, loss=0.8001391887664795 (144.036640s)
+INFO:niftynet:2020-06-14 18:08:44,942: training iter 3159, total_loss=0.4218094050884247, loss=0.4218094050884247 (148.185547s)
+INFO:niftynet:2020-06-14 18:11:10,499: training iter 3160, total_loss=0.4178932011127472, loss=0.4178932011127472 (145.529551s)
+INFO:niftynet:2020-06-14 18:13:40,256: training iter 3161, total_loss=1.1329632997512817, loss=1.1329632997512817 (149.668675s)
+INFO:niftynet:2020-06-14 18:16:09,852: training iter 3162, total_loss=0.4045494496822357, loss=0.4045494496822357 (149.572684s)
+INFO:niftynet:2020-06-14 18:18:43,857: training iter 3163, total_loss=0.5462005734443665, loss=0.5462005734443665 (153.985611s)
+INFO:niftynet:2020-06-14 18:21:12,824: training iter 3164, total_loss=0.3943977653980255, loss=0.3943977653980255 (148.945193s)
+INFO:niftynet:2020-06-14 18:23:41,266: training iter 3165, total_loss=0.40944528579711914, loss=0.40944528579711914 (148.426740s)
+INFO:niftynet:2020-06-14 18:26:06,479: training iter 3166, total_loss=0.4295644760131836, loss=0.4295644760131836 (145.197613s)
+INFO:niftynet:2020-06-14 18:28:33,860: training iter 3167, total_loss=0.6210468411445618, loss=0.6210468411445618 (147.359227s)
+INFO:niftynet:2020-06-14 18:31:01,482: training iter 3168, total_loss=0.3804704248905182, loss=0.3804704248905182 (147.602630s)
+INFO:niftynet:2020-06-14 18:33:32,840: training iter 3169, total_loss=0.751525342464447, loss=0.751525342464447 (151.341479s)
+INFO:niftynet:2020-06-14 18:35:56,745: training iter 3170, total_loss=0.8022809624671936, loss=0.8022809624671936 (143.888483s)
+INFO:niftynet:2020-06-14 18:38:32,156: training iter 3171, total_loss=0.38653719425201416, loss=0.38653719425201416 (155.390991s)
+INFO:niftynet:2020-06-14 18:41:04,299: training iter 3172, total_loss=0.36624717712402344, loss=0.36624717712402344 (152.124444s)
+INFO:niftynet:2020-06-14 18:43:31,322: training iter 3173, total_loss=0.44567450881004333, loss=0.44567450881004333 (147.000355s)
+INFO:niftynet:2020-06-14 18:46:03,985: training iter 3174, total_loss=0.7996042370796204, loss=0.7996042370796204 (152.647822s)
+INFO:niftynet:2020-06-14 18:48:27,825: training iter 3175, total_loss=1.319179892539978, loss=1.319179892539978 (143.816604s)
+INFO:niftynet:2020-06-14 18:51:12,556: training iter 3176, total_loss=0.42041921615600586, loss=0.42041921615600586 (164.710300s)
+INFO:niftynet:2020-06-14 18:53:45,554: training iter 3177, total_loss=0.37888243794441223, loss=0.37888243794441223 (152.980185s)
+INFO:niftynet:2020-06-14 18:56:15,418: training iter 3178, total_loss=0.965580940246582, loss=0.965580940246582 (149.847666s)
+INFO:niftynet:2020-06-14 18:58:57,730: training iter 3179, total_loss=0.612615168094635, loss=0.612615168094635 (162.293975s)
+INFO:niftynet:2020-06-14 19:01:28,756: training iter 3180, total_loss=0.8836266398429871, loss=0.8836266398429871 (151.004702s)
+INFO:niftynet:2020-06-14 19:04:16,676: training iter 3181, total_loss=0.469622939825058, loss=0.469622939825058 (167.839465s)
+INFO:niftynet:2020-06-14 19:06:42,472: training iter 3182, total_loss=0.7721503376960754, loss=0.7721503376960754 (145.782872s)
+INFO:niftynet:2020-06-14 19:09:13,288: training iter 3183, total_loss=1.0559462308883667, loss=1.0559462308883667 (150.799809s)
+INFO:niftynet:2020-06-14 19:11:41,896: training iter 3184, total_loss=0.5308833718299866, loss=0.5308833718299866 (148.592143s)
+INFO:niftynet:2020-06-14 19:14:18,731: training iter 3185, total_loss=0.40049901604652405, loss=0.40049901604652405 (156.816994s)
+INFO:niftynet:2020-06-14 19:16:57,649: training iter 3186, total_loss=0.7679527401924133, loss=0.7679527401924133 (158.899259s)
+INFO:niftynet:2020-06-14 19:19:30,119: training iter 3187, total_loss=0.7631022334098816, loss=0.7631022334098816 (152.456667s)
+INFO:niftynet:2020-06-14 19:22:02,287: training iter 3188, total_loss=1.116487979888916, loss=1.116487979888916 (152.146904s)
+INFO:niftynet:2020-06-14 19:24:32,983: training iter 3189, total_loss=0.387605756521225, loss=0.387605756521225 (150.681193s)
+INFO:niftynet:2020-06-14 19:26:58,424: training iter 3190, total_loss=0.3792489469051361, loss=0.3792489469051361 (145.419276s)
+INFO:niftynet:2020-06-14 19:29:26,083: training iter 3191, total_loss=0.7554263472557068, loss=0.7554263472557068 (147.636923s)
+INFO:niftynet:2020-06-14 19:31:51,066: training iter 3192, total_loss=0.4209579527378082, loss=0.4209579527378082 (144.968615s)
+INFO:niftynet:2020-06-14 19:34:18,273: training iter 3193, total_loss=0.3930875062942505, loss=0.3930875062942505 (147.189268s)
+INFO:niftynet:2020-06-14 19:36:44,274: training iter 3194, total_loss=0.76220703125, loss=0.76220703125 (145.978318s)
+INFO:niftynet:2020-06-14 19:39:26,723: training iter 3195, total_loss=0.41307663917541504, loss=0.41307663917541504 (162.428764s)
+INFO:niftynet:2020-06-14 19:42:00,787: training iter 3196, total_loss=0.8861204981803894, loss=0.8861204981803894 (154.040501s)
+INFO:niftynet:2020-06-14 19:44:28,867: training iter 3197, total_loss=0.7812255024909973, loss=0.7812255024909973 (148.060215s)
+INFO:niftynet:2020-06-14 19:46:58,330: training iter 3198, total_loss=0.6048249006271362, loss=0.6048249006271362 (149.438382s)
+INFO:niftynet:2020-06-14 19:49:32,919: training iter 3199, total_loss=1.519607663154602, loss=1.519607663154602 (154.573363s)
+INFO:niftynet:2020-06-14 19:52:14,503: training iter 3200, total_loss=0.3847312927246094, loss=0.3847312927246094 (161.560854s)
+INFO:niftynet:2020-06-14 19:53:04,662:     validation iter 3200, total_loss=0.8609247803688049, loss=0.8609247803688049 (50.072323s)
+INFO:niftynet:2020-06-14 19:55:40,438: training iter 3201, total_loss=0.6806483864784241, loss=0.6806483864784241 (155.745571s)
+INFO:niftynet:2020-06-14 19:58:14,326: training iter 3202, total_loss=0.3594573438167572, loss=0.3594573438167572 (153.869523s)
+INFO:niftynet:2020-06-14 20:00:42,406: training iter 3203, total_loss=0.7456219792366028, loss=0.7456219792366028 (148.062471s)
+INFO:niftynet:2020-06-14 20:03:08,495: training iter 3204, total_loss=0.4628565013408661, loss=0.4628565013408661 (146.070637s)
+INFO:niftynet:2020-06-14 20:05:36,942: training iter 3205, total_loss=0.39326322078704834, loss=0.39326322078704834 (148.272754s)
+INFO:niftynet:2020-06-14 20:08:05,588: training iter 3206, total_loss=0.35971593856811523, loss=0.35971593856811523 (148.631289s)
+INFO:niftynet:2020-06-14 20:10:33,815: training iter 3207, total_loss=0.38848569989204407, loss=0.38848569989204407 (148.215066s)
+INFO:niftynet:2020-06-14 20:12:58,267: training iter 3208, total_loss=0.6592048406600952, loss=0.6592048406600952 (144.438830s)
+INFO:niftynet:2020-06-14 20:15:25,649: training iter 3209, total_loss=0.4679813086986542, loss=0.4679813086986542 (147.361456s)
+INFO:niftynet:2020-06-14 20:17:51,498: training iter 3210, total_loss=0.38154229521751404, loss=0.38154229521751404 (145.823067s)
+INFO:niftynet:2020-06-14 20:20:22,925: training iter 3211, total_loss=0.9388070702552795, loss=0.9388070702552795 (151.394561s)
+INFO:niftynet:2020-06-14 20:22:48,394: training iter 3212, total_loss=0.47730255126953125, loss=0.47730255126953125 (145.447897s)
+INFO:niftynet:2020-06-14 20:25:15,019: training iter 3213, total_loss=0.41773271560668945, loss=0.41773271560668945 (146.606887s)
+INFO:niftynet:2020-06-14 20:27:51,739: training iter 3214, total_loss=0.39377471804618835, loss=0.39377471804618835 (156.704193s)
+INFO:niftynet:2020-06-14 20:30:26,843: training iter 3215, total_loss=0.9159426093101501, loss=0.9159426093101501 (155.090081s)
+INFO:niftynet:2020-06-14 20:33:11,723: training iter 3216, total_loss=0.7501885890960693, loss=0.7501885890960693 (164.857798s)
+INFO:niftynet:2020-06-14 20:35:36,034: training iter 3217, total_loss=0.3718622922897339, loss=0.3718622922897339 (144.289648s)
+INFO:niftynet:2020-06-14 20:38:00,399: training iter 3218, total_loss=0.3590581715106964, loss=0.3590581715106964 (144.342025s)
+INFO:niftynet:2020-06-14 20:40:24,526: training iter 3219, total_loss=0.47312867641448975, loss=0.47312867641448975 (144.108891s)
+INFO:niftynet:2020-06-14 20:42:57,056: training iter 3220, total_loss=0.3817465305328369, loss=0.3817465305328369 (152.506965s)
+INFO:niftynet:2020-06-14 20:45:19,742: training iter 3221, total_loss=0.3522050380706787, loss=0.3522050380706787 (142.593666s)
+INFO:niftynet:2020-06-14 20:47:43,913: training iter 3222, total_loss=0.42154213786125183, loss=0.42154213786125183 (144.154661s)
+INFO:niftynet:2020-06-14 20:50:17,425: training iter 3223, total_loss=0.7436068654060364, loss=0.7436068654060364 (153.497311s)
+INFO:niftynet:2020-06-14 20:53:11,932: training iter 3224, total_loss=0.7480678558349609, loss=0.7480678558349609 (174.497680s)
+INFO:niftynet:2020-06-14 20:55:48,854: training iter 3225, total_loss=0.7805953621864319, loss=0.7805953621864319 (156.901059s)
+INFO:niftynet:2020-06-14 20:58:20,362: training iter 3226, total_loss=0.5633854269981384, loss=0.5633854269981384 (151.493380s)
+INFO:niftynet:2020-06-14 21:00:56,244: training iter 3227, total_loss=0.3838001787662506, loss=0.3838001787662506 (155.864672s)
+INFO:niftynet:2020-06-14 21:03:20,827: training iter 3228, total_loss=0.6935493350028992, loss=0.6935493350028992 (144.568340s)
+INFO:niftynet:2020-06-14 21:05:50,224: training iter 3229, total_loss=0.7396536469459534, loss=0.7396536469459534 (149.382010s)
+INFO:niftynet:2020-06-14 21:08:22,161: training iter 3230, total_loss=0.3461686074733734, loss=0.3461686074733734 (151.919612s)
+INFO:niftynet:2020-06-14 21:10:49,936: training iter 3231, total_loss=0.7593402862548828, loss=0.7593402862548828 (147.751540s)
+INFO:niftynet:2020-06-14 21:13:15,401: training iter 3232, total_loss=0.6169787049293518, loss=0.6169787049293518 (145.450405s)
+INFO:niftynet:2020-06-14 21:15:44,806: training iter 3233, total_loss=0.5686830282211304, loss=0.5686830282211304 (149.387919s)
+INFO:niftynet:2020-06-14 21:18:15,078: training iter 3234, total_loss=0.36892247200012207, loss=0.36892247200012207 (150.259551s)
+INFO:niftynet:2020-06-14 21:20:45,341: training iter 3235, total_loss=0.3988068103790283, loss=0.3988068103790283 (150.243736s)
+INFO:niftynet:2020-06-14 21:23:15,476: training iter 3236, total_loss=0.37067779898643494, loss=0.37067779898643494 (150.115978s)
+INFO:niftynet:2020-06-14 21:25:40,925: training iter 3237, total_loss=0.7485968470573425, loss=0.7485968470573425 (145.430205s)
+INFO:niftynet:2020-06-14 21:28:06,385: training iter 3238, total_loss=0.340602308511734, loss=0.340602308511734 (145.447854s)
+INFO:niftynet:2020-06-14 21:30:38,096: training iter 3239, total_loss=1.199684500694275, loss=1.199684500694275 (151.697383s)
+INFO:niftynet:2020-06-14 21:33:11,717: training iter 3240, total_loss=0.4617946147918701, loss=0.4617946147918701 (153.604944s)
+INFO:niftynet:2020-06-14 21:35:37,664: training iter 3241, total_loss=0.43675604462623596, loss=0.43675604462623596 (145.857805s)
+INFO:niftynet:2020-06-14 21:38:06,633: training iter 3242, total_loss=1.1124382019042969, loss=1.1124382019042969 (148.955031s)
+INFO:niftynet:2020-06-14 21:40:34,331: training iter 3243, total_loss=0.7334637641906738, loss=0.7334637641906738 (147.675877s)
+INFO:niftynet:2020-06-14 21:42:57,564: training iter 3244, total_loss=0.3950585424900055, loss=0.3950585424900055 (143.219942s)
+INFO:niftynet:2020-06-14 21:45:43,025: training iter 3245, total_loss=0.7509188652038574, loss=0.7509188652038574 (165.438621s)
+INFO:niftynet:2020-06-14 21:48:17,437: training iter 3246, total_loss=0.7514407634735107, loss=0.7514407634735107 (154.390704s)
+INFO:niftynet:2020-06-14 21:50:51,057: training iter 3247, total_loss=0.6850504279136658, loss=0.6850504279136658 (153.602529s)
+INFO:niftynet:2020-06-14 21:53:14,718: training iter 3248, total_loss=0.4155503809452057, loss=0.4155503809452057 (143.647240s)
+INFO:niftynet:2020-06-14 21:55:45,525: training iter 3249, total_loss=0.35545721650123596, loss=0.35545721650123596 (150.787450s)
+INFO:niftynet:2020-06-14 21:58:12,317: training iter 3250, total_loss=0.7597596645355225, loss=0.7597596645355225 (146.775397s)
+INFO:niftynet:2020-06-14 22:00:43,386: training iter 3251, total_loss=0.5619451403617859, loss=0.5619451403617859 (151.047296s)
+INFO:niftynet:2020-06-14 22:03:34,123: training iter 3252, total_loss=0.3855755031108856, loss=0.3855755031108856 (170.718908s)
+INFO:niftynet:2020-06-14 22:06:01,480: training iter 3253, total_loss=1.1054617166519165, loss=1.1054617166519165 (147.337296s)
+INFO:niftynet:2020-06-14 22:08:27,553: training iter 3254, total_loss=0.3783254623413086, loss=0.3783254623413086 (146.052107s)
+INFO:niftynet:2020-06-14 22:10:56,399: training iter 3255, total_loss=0.3582178056240082, loss=0.3582178056240082 (148.828301s)
+INFO:niftynet:2020-06-14 22:13:28,086: training iter 3256, total_loss=0.6878507733345032, loss=0.6878507733345032 (151.664180s)
+INFO:niftynet:2020-06-14 22:15:56,804: training iter 3257, total_loss=0.354502409696579, loss=0.354502409696579 (148.703839s)
+INFO:niftynet:2020-06-14 22:18:25,241: training iter 3258, total_loss=0.4481198787689209, loss=0.4481198787689209 (148.417883s)
+INFO:niftynet:2020-06-14 22:20:52,137: training iter 3259, total_loss=0.8010041117668152, loss=0.8010041117668152 (146.874184s)
+INFO:niftynet:2020-06-14 22:23:25,507: training iter 3260, total_loss=0.8077187538146973, loss=0.8077187538146973 (153.352182s)
+INFO:niftynet:2020-06-14 22:25:59,057: training iter 3261, total_loss=0.37647545337677, loss=0.37647545337677 (153.466410s)
+INFO:niftynet:2020-06-14 22:28:29,322: training iter 3262, total_loss=0.47623714804649353, loss=0.47623714804649353 (150.247644s)
+INFO:niftynet:2020-06-14 22:30:58,978: training iter 3263, total_loss=0.33039578795433044, loss=0.33039578795433044 (149.634922s)
+INFO:niftynet:2020-06-14 22:33:27,057: training iter 3264, total_loss=0.35121259093284607, loss=0.35121259093284607 (148.060869s)
+INFO:niftynet:2020-06-14 22:35:55,275: training iter 3265, total_loss=0.7260218262672424, loss=0.7260218262672424 (148.202649s)
+INFO:niftynet:2020-06-14 22:38:24,556: training iter 3266, total_loss=0.3455621898174286, loss=0.3455621898174286 (149.263063s)
+INFO:niftynet:2020-06-14 22:40:49,711: training iter 3267, total_loss=0.5884886384010315, loss=0.5884886384010315 (145.135004s)
+INFO:niftynet:2020-06-14 22:43:15,612: training iter 3268, total_loss=0.36865222454071045, loss=0.36865222454071045 (145.882544s)
+INFO:niftynet:2020-06-14 22:45:44,918: training iter 3269, total_loss=0.7059006690979004, loss=0.7059006690979004 (149.289297s)
+INFO:niftynet:2020-06-14 22:48:13,989: training iter 3270, total_loss=0.5465114712715149, loss=0.5465114712715149 (149.043738s)
+INFO:niftynet:2020-06-14 22:50:38,407: training iter 3271, total_loss=0.7241120338439941, loss=0.7241120338439941 (144.391870s)
+INFO:niftynet:2020-06-14 22:53:02,653: training iter 3272, total_loss=0.32167336344718933, loss=0.32167336344718933 (144.229830s)
+INFO:niftynet:2020-06-14 22:55:27,296: training iter 3273, total_loss=0.56076979637146, loss=0.56076979637146 (144.626393s)
+INFO:niftynet:2020-06-14 22:57:53,707: training iter 3274, total_loss=0.7795088887214661, loss=0.7795088887214661 (146.390574s)
+INFO:niftynet:2020-06-14 23:00:21,611: training iter 3275, total_loss=0.3406067192554474, loss=0.3406067192554474 (147.884745s)
+INFO:niftynet:2020-06-14 23:02:57,439: training iter 3276, total_loss=1.3279682397842407, loss=1.3279682397842407 (155.812520s)
+INFO:niftynet:2020-06-14 23:05:20,696: training iter 3277, total_loss=0.3497031033039093, loss=0.3497031033039093 (143.234861s)
+INFO:niftynet:2020-06-14 23:07:45,563: training iter 3278, total_loss=0.3274114727973938, loss=0.3274114727973938 (144.847824s)
+INFO:niftynet:2020-06-14 23:10:08,531: training iter 3279, total_loss=0.7212996482849121, loss=0.7212996482849121 (142.952823s)
+INFO:niftynet:2020-06-14 23:12:35,476: training iter 3280, total_loss=0.46702107787132263, loss=0.46702107787132263 (146.922306s)
+INFO:niftynet:2020-06-14 23:14:58,133: training iter 3281, total_loss=0.5102234482765198, loss=0.5102234482765198 (142.553420s)
+INFO:niftynet:2020-06-14 23:17:22,439: training iter 3282, total_loss=0.6422601342201233, loss=0.6422601342201233 (144.286536s)
+INFO:niftynet:2020-06-14 23:19:46,640: training iter 3283, total_loss=0.7328723073005676, loss=0.7328723073005676 (144.182209s)
+INFO:niftynet:2020-06-14 23:22:11,977: training iter 3284, total_loss=0.3961658775806427, loss=0.3961658775806427 (145.317925s)
+INFO:niftynet:2020-06-14 23:24:35,633: training iter 3285, total_loss=0.36108386516571045, loss=0.36108386516571045 (143.634293s)
+INFO:niftynet:2020-06-14 23:27:16,344: training iter 3286, total_loss=0.4531003534793854, loss=0.4531003534793854 (160.693261s)
+INFO:niftynet:2020-06-14 23:29:42,875: training iter 3287, total_loss=0.3853067457675934, loss=0.3853067457675934 (146.515346s)
+INFO:niftynet:2020-06-14 23:32:10,987: training iter 3288, total_loss=0.7875432968139648, loss=0.7875432968139648 (148.090351s)
+INFO:niftynet:2020-06-14 23:34:35,767: training iter 3289, total_loss=0.334244966506958, loss=0.334244966506958 (144.762102s)
+INFO:niftynet:2020-06-14 23:37:01,272: training iter 3290, total_loss=0.5077719688415527, loss=0.5077719688415527 (145.485332s)
+INFO:niftynet:2020-06-14 23:39:22,970: training iter 3291, total_loss=0.3828478157520294, loss=0.3828478157520294 (141.675637s)
+INFO:niftynet:2020-06-14 23:41:53,053: training iter 3292, total_loss=1.084082007408142, loss=1.084082007408142 (150.065327s)
+INFO:niftynet:2020-06-14 23:44:18,521: training iter 3293, total_loss=0.7357668280601501, loss=0.7357668280601501 (145.451424s)
+INFO:niftynet:2020-06-14 23:46:43,279: training iter 3294, total_loss=0.7177276611328125, loss=0.7177276611328125 (144.741613s)
+INFO:niftynet:2020-06-14 23:49:10,986: training iter 3295, total_loss=0.3489789068698883, loss=0.3489789068698883 (147.695107s)
+INFO:niftynet:2020-06-14 23:51:34,131: training iter 3296, total_loss=0.6139634251594543, loss=0.6139634251594543 (143.127706s)
+INFO:niftynet:2020-06-14 23:54:40,732: training iter 3297, total_loss=0.34411296248435974, loss=0.34411296248435974 (186.583113s)
+INFO:niftynet:2020-06-14 23:57:40,229: training iter 3298, total_loss=0.7280728220939636, loss=0.7280728220939636 (179.481183s)
+INFO:niftynet:2020-06-15 00:00:45,673: training iter 3299, total_loss=0.5370795130729675, loss=0.5370795130729675 (185.425036s)
+INFO:niftynet:2020-06-15 00:03:48,898: training iter 3300, total_loss=0.4405536353588104, loss=0.4405536353588104 (183.205903s)
+INFO:niftynet:2020-06-15 00:06:50,929: training iter 3301, total_loss=0.33984509110450745, loss=0.33984509110450745 (181.934491s)
+INFO:niftynet:2020-06-15 00:09:22,935: training iter 3302, total_loss=0.9739279747009277, loss=0.9739279747009277 (151.986472s)
+INFO:niftynet:2020-06-15 00:11:48,752: training iter 3303, total_loss=0.792087972164154, loss=0.792087972164154 (145.796154s)
+INFO:niftynet:2020-06-15 00:14:21,102: training iter 3304, total_loss=0.3340444564819336, loss=0.3340444564819336 (152.331022s)
+INFO:niftynet:2020-06-15 00:16:44,209: training iter 3305, total_loss=0.6931582093238831, loss=0.6931582093238831 (143.086670s)
+INFO:niftynet:2020-06-15 00:19:15,448: training iter 3306, total_loss=0.3473403751850128, loss=0.3473403751850128 (151.225749s)
+INFO:niftynet:2020-06-15 00:22:02,320: training iter 3307, total_loss=0.553567111492157, loss=0.553567111492157 (166.857487s)
+WARNING:niftynet:2020-06-15 00:24:44,291: User cancelled application
+INFO:niftynet:2020-06-15 00:24:44,303: cleaning up...
+INFO:niftynet:2020-06-15 00:24:44,342: stopping sampling threads
+INFO:niftynet:2020-06-15 00:24:53,357: iter 3308 saved: /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt
+WARNING:niftynet:2020-06-15 00:24:54,015: stopped early, incomplete iterations.
+INFO:niftynet:2020-06-15 00:24:54,016: SegmentationApplication stopped (time in second 47348.92).
+INFO:niftynet:2020-06-17 01:12:31,326: starting segmentation application
+INFO:niftynet:2020-06-17 01:12:31,328: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-17 01:12:31,328: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-17 01:12:31,329: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-17 01:12:31,358: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-17 01:12:31,359: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-17 01:12:31,359: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-17 01:12:31,389: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-17 01:12:31,390: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-17 01:12:31,390: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+WARNING:niftynet:2020-06-17 01:12:31,405: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-17 01:12:31,406: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-17 01:12:31,411: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'seg', 'label']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-17 01:12:31,611: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-17 01:12:32,607: Image reader: loading 87 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 01:12:32,607: Image reader: loading 87 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 01:12:33,200: Image reader: loading 44 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 01:12:33,201: Image reader: loading 44 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 01:12:33,228: reading size of preprocessed images
+WARNING:niftynet:2020-06-17 01:12:33,231: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-17 01:12:33,253: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-17 01:12:33,254: reading size of preprocessed images
+WARNING:niftynet:2020-06-17 01:12:33,255: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-17 01:12:33,261: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-17 01:12:33,289: using DenseVNet
+WARNING:niftynet:2020-06-17 01:12:33,290: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/application/base_application.py:203: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:niftynet:2020-06-17 01:12:33,317: Initialising Dataset from 87 subjects...
+INFO:niftynet:2020-06-17 01:12:33,475: Initialising Dataset from 44 subjects...
+WARNING:niftynet:2020-06-17 01:12:33,619: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:60: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:niftynet:2020-06-17 01:12:33,631: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:68: The name tf.matrix_solve_ls is deprecated. Please use tf.linalg.lstsq instead.
+
+WARNING:niftynet:2020-06-17 01:12:34,354: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-17 01:12:37,253: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/linear_resize.py:60: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:niftynet:2020-06-17 01:12:38,195: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-17 01:12:38,498: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_optimiser.py:31: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:niftynet:2020-06-17 01:12:38,505: Import [dice] from /Users/jayasuriyasenthilvelan/niftynet/extensions/dense_vnet_abdominal_ct/dice_hinge.py.
+WARNING:niftynet:2020-06-17 01:12:42,317: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_variables.py:188: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:niftynet:2020-06-17 01:12:43,294: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_tensorboard.py:49: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:niftynet:2020-06-17 01:12:56,719: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:niftynet:2020-06-17 01:12:57,627: Restoring parameters from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt-3308
+WARNING:niftynet:2020-06-17 01:16:55,890: User cancelled application
+INFO:niftynet:2020-06-17 01:16:55,976: cleaning up...
+INFO:niftynet:2020-06-17 01:16:56,008: stopping sampling threads
+INFO:niftynet:2020-06-17 01:17:02,027: iter 3309 saved: /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt
+WARNING:niftynet:2020-06-17 01:17:02,378: stopped early, incomplete iterations.
+INFO:niftynet:2020-06-17 01:17:02,379: SegmentationApplication stopped (time in second 246.51).
+INFO:niftynet:2020-06-17 01:19:10,820: starting segmentation application
+INFO:niftynet:2020-06-17 01:19:10,820: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-17 01:19:10,820: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-17 01:19:10,821: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-17 01:19:10,840: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-17 01:19:10,840: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-17 01:19:10,841: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-17 01:19:10,860: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-17 01:19:10,861: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-17 01:19:10,861: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+WARNING:niftynet:2020-06-17 01:19:10,875: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-17 01:19:10,875: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-17 01:19:10,879: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'seg', 'label']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-17 01:19:11,037: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-17 01:19:12,135: Image reader: loading 87 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 01:19:12,135: Image reader: loading 87 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 01:19:12,609: Image reader: loading 44 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 01:19:12,610: Image reader: loading 44 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 01:19:12,630: reading size of preprocessed images
+WARNING:niftynet:2020-06-17 01:19:12,636: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-17 01:19:12,646: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-17 01:19:12,646: reading size of preprocessed images
+WARNING:niftynet:2020-06-17 01:19:12,647: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-17 01:19:12,653: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-17 01:19:12,676: using DenseVNet
+WARNING:niftynet:2020-06-17 01:19:12,677: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/application/base_application.py:203: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:niftynet:2020-06-17 01:19:12,682: Initialising Dataset from 87 subjects...
+INFO:niftynet:2020-06-17 01:19:12,804: Initialising Dataset from 44 subjects...
+WARNING:niftynet:2020-06-17 01:19:12,913: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:60: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:niftynet:2020-06-17 01:19:12,924: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:68: The name tf.matrix_solve_ls is deprecated. Please use tf.linalg.lstsq instead.
+
+WARNING:niftynet:2020-06-17 01:19:13,317: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-17 01:19:16,093: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/linear_resize.py:60: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:niftynet:2020-06-17 01:19:17,120: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-17 01:19:17,455: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_optimiser.py:31: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:niftynet:2020-06-17 01:19:17,462: Import [dice] from /Users/jayasuriyasenthilvelan/niftynet/extensions/dense_vnet_abdominal_ct/dice_hinge.py.
+WARNING:niftynet:2020-06-17 01:19:21,636: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_variables.py:188: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:niftynet:2020-06-17 01:19:21,638: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_tensorboard.py:49: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:niftynet:2020-06-17 01:19:33,173: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_model.py:108: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:niftynet:2020-06-17 01:19:33,605: Restoring parameters from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt-3308
+INFO:niftynet:2020-06-17 01:23:16,274: training iter 3309, total_loss=0.37007150053977966, loss=0.37007150053977966 (220.464693s)
+INFO:niftynet:2020-06-17 01:26:30,936: training iter 3310, total_loss=0.34575605392456055, loss=0.34575605392456055 (194.564373s)
+INFO:niftynet:2020-06-17 01:29:21,131: training iter 3311, total_loss=1.0980340242385864, loss=1.0980340242385864 (170.182707s)
+INFO:niftynet:2020-06-17 01:32:13,474: training iter 3312, total_loss=0.38137662410736084, loss=0.38137662410736084 (172.325828s)
+INFO:niftynet:2020-06-17 01:34:53,441: training iter 3313, total_loss=0.36711207032203674, loss=0.36711207032203674 (159.945328s)
+INFO:niftynet:2020-06-17 01:37:44,519: training iter 3314, total_loss=0.6912758350372314, loss=0.6912758350372314 (171.061319s)
+INFO:niftynet:2020-06-17 01:40:35,453: training iter 3315, total_loss=1.1132317781448364, loss=1.1132317781448364 (170.916237s)
+INFO:niftynet:2020-06-17 01:43:19,625: training iter 3316, total_loss=0.3595030605792999, loss=0.3595030605792999 (164.151937s)
+INFO:niftynet:2020-06-17 01:46:05,747: training iter 3317, total_loss=0.7661166191101074, loss=0.7661166191101074 (166.102207s)
+INFO:niftynet:2020-06-17 01:48:48,232: training iter 3318, total_loss=0.34773680567741394, loss=0.34773680567741394 (162.462648s)
+INFO:niftynet:2020-06-17 01:51:36,312: training iter 3319, total_loss=0.4851858615875244, loss=0.4851858615875244 (168.059840s)
+INFO:niftynet:2020-06-17 01:54:47,301: training iter 3320, total_loss=0.325847327709198, loss=0.325847327709198 (190.970203s)
+INFO:niftynet:2020-06-17 01:57:38,856: training iter 3321, total_loss=0.34993085265159607, loss=0.34993085265159607 (171.440552s)
+INFO:niftynet:2020-06-17 02:00:28,479: training iter 3322, total_loss=0.3385646343231201, loss=0.3385646343231201 (169.595981s)
+INFO:niftynet:2020-06-17 02:03:27,752: training iter 3323, total_loss=0.7753458619117737, loss=0.7753458619117737 (179.255162s)
+INFO:niftynet:2020-06-17 02:06:20,032: training iter 3324, total_loss=0.8990178108215332, loss=0.8990178108215332 (172.259809s)
+INFO:niftynet:2020-06-17 02:09:12,591: training iter 3325, total_loss=1.0814021825790405, loss=1.0814021825790405 (172.541031s)
+INFO:niftynet:2020-06-17 02:12:00,682: training iter 3326, total_loss=0.6129400134086609, loss=0.6129400134086609 (168.069976s)
+INFO:niftynet:2020-06-17 02:14:58,193: training iter 3327, total_loss=0.7289862036705017, loss=0.7289862036705017 (177.494406s)
+INFO:niftynet:2020-06-17 02:17:58,036: training iter 3328, total_loss=0.7091420292854309, loss=0.7091420292854309 (179.831676s)
+INFO:niftynet:2020-06-17 02:20:49,194: training iter 3329, total_loss=0.3514082431793213, loss=0.3514082431793213 (171.142773s)
+INFO:niftynet:2020-06-17 02:23:39,063: training iter 3330, total_loss=0.3429379165172577, loss=0.3429379165172577 (169.848337s)
+INFO:niftynet:2020-06-17 02:26:32,742: training iter 3331, total_loss=0.31177425384521484, loss=0.31177425384521484 (173.663397s)
+INFO:niftynet:2020-06-17 02:29:27,182: training iter 3332, total_loss=0.5351529717445374, loss=0.5351529717445374 (174.415205s)
+INFO:niftynet:2020-06-17 02:32:22,880: training iter 3333, total_loss=0.48097291588783264, loss=0.48097291588783264 (175.676223s)
+INFO:niftynet:2020-06-17 02:35:14,469: training iter 3334, total_loss=0.46930018067359924, loss=0.46930018067359924 (171.576871s)
+INFO:niftynet:2020-06-17 02:38:03,953: training iter 3335, total_loss=0.31958135962486267, loss=0.31958135962486267 (169.468117s)
+INFO:niftynet:2020-06-17 02:41:09,305: training iter 3336, total_loss=0.3976018726825714, loss=0.3976018726825714 (185.332844s)
+INFO:niftynet:2020-06-17 02:44:18,571: training iter 3337, total_loss=0.712883472442627, loss=0.712883472442627 (189.245207s)
+INFO:niftynet:2020-06-17 02:47:09,203: training iter 3338, total_loss=0.5059648752212524, loss=0.5059648752212524 (170.604094s)
+INFO:niftynet:2020-06-17 02:49:55,630: training iter 3339, total_loss=0.3492952883243561, loss=0.3492952883243561 (166.399950s)
+INFO:niftynet:2020-06-17 02:52:54,191: training iter 3340, total_loss=0.7239704132080078, loss=0.7239704132080078 (178.542637s)
+INFO:niftynet:2020-06-17 02:55:45,316: training iter 3341, total_loss=0.33248579502105713, loss=0.33248579502105713 (171.033680s)
+INFO:niftynet:2020-06-17 02:58:31,655: training iter 3342, total_loss=0.7734864354133606, loss=0.7734864354133606 (166.317643s)
+INFO:niftynet:2020-06-17 03:01:24,906: training iter 3343, total_loss=0.9630401134490967, loss=0.9630401134490967 (173.234544s)
+INFO:niftynet:2020-06-17 03:04:18,099: training iter 3344, total_loss=0.33029845356941223, loss=0.33029845356941223 (173.173305s)
+INFO:niftynet:2020-06-17 03:07:10,986: training iter 3345, total_loss=0.31859350204467773, loss=0.31859350204467773 (172.867022s)
+INFO:niftynet:2020-06-17 03:09:56,219: training iter 3346, total_loss=0.49974140524864197, loss=0.49974140524864197 (165.212000s)
+INFO:niftynet:2020-06-17 03:12:43,820: training iter 3347, total_loss=0.3349791467189789, loss=0.3349791467189789 (167.583303s)
+INFO:niftynet:2020-06-17 03:15:25,613: training iter 3348, total_loss=0.32911601662635803, loss=0.32911601662635803 (161.770077s)
+INFO:niftynet:2020-06-17 03:18:19,361: training iter 3349, total_loss=0.8042721748352051, loss=0.8042721748352051 (173.732601s)
+INFO:niftynet:2020-06-17 03:21:17,715: training iter 3350, total_loss=0.6720826029777527, loss=0.6720826029777527 (178.328939s)
+INFO:niftynet:2020-06-17 03:22:07,559:     validation iter 3350, total_loss=1.6107163429260254, loss=1.6107163429260254 (49.835936s)
+INFO:niftynet:2020-06-17 03:25:02,361: training iter 3351, total_loss=0.6724128127098083, loss=0.6724128127098083 (174.790195s)
+INFO:niftynet:2020-06-17 03:28:00,386: training iter 3352, total_loss=0.708422839641571, loss=0.708422839641571 (178.009012s)
+INFO:niftynet:2020-06-17 03:30:53,690: training iter 3353, total_loss=0.3187999427318573, loss=0.3187999427318573 (173.285495s)
+INFO:niftynet:2020-06-17 03:33:46,407: training iter 3354, total_loss=0.42640420794487, loss=0.42640420794487 (172.693688s)
+INFO:niftynet:2020-06-17 03:36:25,808: training iter 3355, total_loss=0.6050066351890564, loss=0.6050066351890564 (159.382017s)
+INFO:niftynet:2020-06-17 03:39:10,108: training iter 3356, total_loss=0.33331429958343506, loss=0.33331429958343506 (164.280712s)
+INFO:niftynet:2020-06-17 03:42:09,786: training iter 3357, total_loss=0.3618050515651703, loss=0.3618050515651703 (179.658971s)
+INFO:niftynet:2020-06-17 03:45:06,831: training iter 3358, total_loss=0.4290015995502472, loss=0.4290015995502472 (177.028538s)
+INFO:niftynet:2020-06-17 03:48:09,826: training iter 3359, total_loss=0.4281651973724365, loss=0.4281651973724365 (182.967928s)
+INFO:niftynet:2020-06-17 03:51:00,801: training iter 3360, total_loss=1.0559245347976685, loss=1.0559245347976685 (170.951511s)
+INFO:niftynet:2020-06-17 03:53:55,537: training iter 3361, total_loss=0.4148394763469696, loss=0.4148394763469696 (174.645809s)
+INFO:niftynet:2020-06-17 03:56:50,282: training iter 3362, total_loss=0.44395700097084045, loss=0.44395700097084045 (174.719051s)
+INFO:niftynet:2020-06-17 03:59:39,104: training iter 3363, total_loss=0.4200700521469116, loss=0.4200700521469116 (168.802252s)
+INFO:niftynet:2020-06-17 04:02:44,593: training iter 3364, total_loss=0.7305493354797363, loss=0.7305493354797363 (185.475353s)
+INFO:niftynet:2020-06-17 04:05:36,984: training iter 3365, total_loss=0.37015557289123535, loss=0.37015557289123535 (172.373371s)
+INFO:niftynet:2020-06-17 04:08:31,726: training iter 3366, total_loss=1.1036702394485474, loss=1.1036702394485474 (174.719134s)
+INFO:niftynet:2020-06-17 04:11:29,438: training iter 3367, total_loss=0.9058129191398621, loss=0.9058129191398621 (177.695699s)
+INFO:niftynet:2020-06-17 04:14:32,393: training iter 3368, total_loss=0.6636565923690796, loss=0.6636565923690796 (182.933162s)
+INFO:niftynet:2020-06-17 04:17:23,890: training iter 3369, total_loss=0.39045634865760803, loss=0.39045634865760803 (171.479200s)
+INFO:niftynet:2020-06-17 04:20:39,505: training iter 3370, total_loss=0.3313765227794647, loss=0.3313765227794647 (195.598647s)
+INFO:niftynet:2020-06-17 04:23:49,674: training iter 3371, total_loss=0.5308992266654968, loss=0.5308992266654968 (190.153550s)
+INFO:niftynet:2020-06-17 04:26:45,492: training iter 3372, total_loss=0.3694084584712982, loss=0.3694084584712982 (175.803573s)
+INFO:niftynet:2020-06-17 04:29:45,243: training iter 3373, total_loss=0.3663467466831207, loss=0.3663467466831207 (179.730678s)
+INFO:niftynet:2020-06-17 04:32:36,432: training iter 3374, total_loss=0.9237110018730164, loss=0.9237110018730164 (171.172842s)
+INFO:niftynet:2020-06-17 04:35:53,317: training iter 3375, total_loss=1.1128932237625122, loss=1.1128932237625122 (196.869012s)
+INFO:niftynet:2020-06-17 04:38:56,494: training iter 3376, total_loss=0.42636144161224365, loss=0.42636144161224365 (183.159278s)
+INFO:niftynet:2020-06-17 04:41:49,004: training iter 3377, total_loss=0.3295745253562927, loss=0.3295745253562927 (172.486317s)
+INFO:niftynet:2020-06-17 04:44:41,755: training iter 3378, total_loss=0.7051272392272949, loss=0.7051272392272949 (172.731716s)
+INFO:niftynet:2020-06-17 04:47:38,232: training iter 3379, total_loss=0.32772335410118103, loss=0.32772335410118103 (176.458088s)
+INFO:niftynet:2020-06-17 04:50:37,410: training iter 3380, total_loss=0.3972921669483185, loss=0.3972921669483185 (179.158364s)
+INFO:niftynet:2020-06-17 04:53:38,527: training iter 3381, total_loss=0.3090774118900299, loss=0.3090774118900299 (181.025640s)
+INFO:niftynet:2020-06-17 04:56:40,576: training iter 3382, total_loss=0.30471792817115784, loss=0.30471792817115784 (182.028766s)
+INFO:niftynet:2020-06-17 04:59:30,849: training iter 3383, total_loss=0.4099823534488678, loss=0.4099823534488678 (170.243269s)
+INFO:niftynet:2020-06-17 05:02:30,982: training iter 3384, total_loss=0.6476889848709106, loss=0.6476889848709106 (180.114121s)
+INFO:niftynet:2020-06-17 05:05:29,496: training iter 3385, total_loss=0.49756860733032227, loss=0.49756860733032227 (178.495618s)
+INFO:niftynet:2020-06-17 05:08:23,759: training iter 3386, total_loss=0.320799320936203, loss=0.320799320936203 (174.251658s)
+INFO:niftynet:2020-06-17 05:11:28,095: training iter 3387, total_loss=1.0884665250778198, loss=1.0884665250778198 (184.322675s)
+INFO:niftynet:2020-06-17 05:14:21,410: training iter 3388, total_loss=0.9332897663116455, loss=0.9332897663116455 (173.300657s)
+INFO:niftynet:2020-06-17 05:17:16,157: training iter 3389, total_loss=0.8957880139350891, loss=0.8957880139350891 (174.730070s)
+INFO:niftynet:2020-06-17 05:20:21,319: training iter 3390, total_loss=0.3681327998638153, loss=0.3681327998638153 (185.147025s)
+INFO:niftynet:2020-06-17 05:23:33,680: training iter 3391, total_loss=0.3414723873138428, loss=0.3414723873138428 (192.342974s)
+INFO:niftynet:2020-06-17 05:26:22,863: training iter 3392, total_loss=0.7032186985015869, loss=0.7032186985015869 (169.162380s)
+INFO:niftynet:2020-06-17 05:29:14,029: training iter 3393, total_loss=0.6143270134925842, loss=0.6143270134925842 (171.150345s)
+INFO:niftynet:2020-06-17 05:32:06,911: training iter 3394, total_loss=0.512461245059967, loss=0.512461245059967 (172.863600s)
+INFO:niftynet:2020-06-17 05:35:09,380: training iter 3395, total_loss=0.7649709582328796, loss=0.7649709582328796 (182.449969s)
+INFO:niftynet:2020-06-17 05:37:59,921: training iter 3396, total_loss=0.6773034930229187, loss=0.6773034930229187 (170.522678s)
+INFO:niftynet:2020-06-17 05:40:51,529: training iter 3397, total_loss=0.33417582511901855, loss=0.33417582511901855 (171.593098s)
+INFO:niftynet:2020-06-17 05:43:38,426: training iter 3398, total_loss=0.3401378393173218, loss=0.3401378393173218 (166.878135s)
+INFO:niftynet:2020-06-17 05:46:30,545: training iter 3399, total_loss=0.29510125517845154, loss=0.29510125517845154 (172.099737s)
+INFO:niftynet:2020-06-17 05:49:40,894: training iter 3400, total_loss=0.39091718196868896, loss=0.39091718196868896 (190.325426s)
+INFO:niftynet:2020-06-17 05:50:31,702:     validation iter 3400, total_loss=0.3241473138332367, loss=0.3241473138332367 (50.715937s)
+INFO:niftynet:2020-06-17 05:53:22,470: training iter 3401, total_loss=0.3605171740055084, loss=0.3605171740055084 (170.725258s)
+INFO:niftynet:2020-06-17 05:56:22,278: training iter 3402, total_loss=0.5087683796882629, loss=0.5087683796882629 (179.792786s)
+INFO:niftynet:2020-06-17 05:59:25,673: training iter 3403, total_loss=0.48761001229286194, loss=0.48761001229286194 (183.372366s)
+INFO:niftynet:2020-06-17 06:02:23,220: training iter 3404, total_loss=0.7098417282104492, loss=0.7098417282104492 (177.527399s)
+INFO:niftynet:2020-06-17 06:05:20,669: training iter 3405, total_loss=0.36491236090660095, loss=0.36491236090660095 (177.425240s)
+INFO:niftynet:2020-06-17 06:08:12,635: training iter 3406, total_loss=0.346233993768692, loss=0.346233993768692 (171.949539s)
+INFO:niftynet:2020-06-17 06:11:17,439: training iter 3407, total_loss=0.34141942858695984, loss=0.34141942858695984 (184.774799s)
+INFO:niftynet:2020-06-17 06:14:31,831: training iter 3408, total_loss=0.7965237498283386, loss=0.7965237498283386 (194.371021s)
+INFO:niftynet:2020-06-17 06:17:23,805: training iter 3409, total_loss=0.32343265414237976, loss=0.32343265414237976 (171.955272s)
+INFO:niftynet:2020-06-17 06:20:14,727: training iter 3410, total_loss=0.8618300557136536, loss=0.8618300557136536 (170.899115s)
+INFO:niftynet:2020-06-17 06:23:00,954: training iter 3411, total_loss=0.294110506772995, loss=0.294110506772995 (166.208835s)
+INFO:niftynet:2020-06-17 06:25:53,590: training iter 3412, total_loss=0.32450053095817566, loss=0.32450053095817566 (172.618535s)
+INFO:niftynet:2020-06-17 06:28:45,927: training iter 3413, total_loss=0.3316798210144043, loss=0.3316798210144043 (172.311016s)
+INFO:niftynet:2020-06-17 06:31:43,032: training iter 3414, total_loss=0.6400310397148132, loss=0.6400310397148132 (177.086401s)
+INFO:niftynet:2020-06-17 06:34:31,665: training iter 3415, total_loss=0.7167335152626038, loss=0.7167335152626038 (168.613545s)
+INFO:niftynet:2020-06-17 06:37:35,155: training iter 3416, total_loss=0.341834157705307, loss=0.341834157705307 (183.476571s)
+INFO:niftynet:2020-06-17 06:40:30,922: training iter 3417, total_loss=0.3189862072467804, loss=0.3189862072467804 (175.748625s)
+INFO:niftynet:2020-06-17 06:43:22,242: training iter 3418, total_loss=0.8805003762245178, loss=0.8805003762245178 (171.294204s)
+INFO:niftynet:2020-06-17 06:46:23,621: training iter 3419, total_loss=0.8681030869483948, loss=0.8681030869483948 (181.359386s)
+INFO:niftynet:2020-06-17 06:49:46,920: training iter 3420, total_loss=0.3726097643375397, loss=0.3726097643375397 (203.275426s)
+INFO:niftynet:2020-06-17 06:52:46,401: training iter 3421, total_loss=0.3266051709651947, loss=0.3266051709651947 (179.375577s)
+INFO:niftynet:2020-06-17 06:56:01,480: training iter 3422, total_loss=0.7037568092346191, loss=0.7037568092346191 (195.058426s)
+INFO:niftynet:2020-06-17 06:58:53,841: training iter 3423, total_loss=0.6733687520027161, loss=0.6733687520027161 (172.347960s)
+INFO:niftynet:2020-06-17 07:01:59,061: training iter 3424, total_loss=0.7553317546844482, loss=0.7553317546844482 (185.200083s)
+INFO:niftynet:2020-06-17 07:05:03,594: training iter 3425, total_loss=0.29300352931022644, loss=0.29300352931022644 (184.509500s)
+INFO:niftynet:2020-06-17 07:08:12,503: training iter 3426, total_loss=0.3082779347896576, loss=0.3082779347896576 (188.890562s)
+INFO:niftynet:2020-06-17 07:11:08,516: training iter 3427, total_loss=0.3001425266265869, loss=0.3001425266265869 (175.988490s)
+INFO:niftynet:2020-06-17 07:13:55,519: training iter 3428, total_loss=0.3080469071865082, loss=0.3080469071865082 (166.976556s)
+INFO:niftynet:2020-06-17 07:16:45,732: training iter 3429, total_loss=0.7343316078186035, loss=0.7343316078186035 (170.194876s)
+INFO:niftynet:2020-06-17 07:19:42,719: training iter 3430, total_loss=0.30353909730911255, loss=0.30353909730911255 (176.966205s)
+INFO:niftynet:2020-06-17 07:22:35,604: training iter 3431, total_loss=0.3146660625934601, loss=0.3146660625934601 (172.866006s)
+INFO:niftynet:2020-06-17 07:25:26,396: training iter 3432, total_loss=1.5643795728683472, loss=1.5643795728683472 (170.774696s)
+INFO:niftynet:2020-06-17 07:28:18,746: training iter 3433, total_loss=0.6212850213050842, loss=0.6212850213050842 (172.330918s)
+INFO:niftynet:2020-06-17 07:31:07,997: training iter 3434, total_loss=0.32650861144065857, loss=0.32650861144065857 (169.225840s)
+INFO:niftynet:2020-06-17 07:34:00,002: training iter 3435, total_loss=0.34036338329315186, loss=0.34036338329315186 (171.980259s)
+INFO:niftynet:2020-06-17 07:36:54,574: training iter 3436, total_loss=0.37368693947792053, loss=0.37368693947792053 (174.555898s)
+INFO:niftynet:2020-06-17 07:39:42,891: training iter 3437, total_loss=0.3047596514225006, loss=0.3047596514225006 (168.298456s)
+INFO:niftynet:2020-06-17 07:42:38,301: training iter 3438, total_loss=0.3554661273956299, loss=0.3554661273956299 (175.388546s)
+INFO:niftynet:2020-06-17 07:45:27,490: training iter 3439, total_loss=0.7512266039848328, loss=0.7512266039848328 (169.168909s)
+INFO:niftynet:2020-06-17 07:48:22,798: training iter 3440, total_loss=0.32518574595451355, loss=0.32518574595451355 (175.292298s)
+INFO:niftynet:2020-06-17 07:51:21,132: training iter 3441, total_loss=0.36556383967399597, loss=0.36556383967399597 (178.198600s)
+INFO:niftynet:2020-06-17 07:54:23,652: training iter 3442, total_loss=0.30692875385284424, loss=0.30692875385284424 (182.492032s)
+INFO:niftynet:2020-06-17 07:57:13,623: training iter 3443, total_loss=0.3357236385345459, loss=0.3357236385345459 (169.951284s)
+INFO:niftynet:2020-06-17 08:00:06,224: training iter 3444, total_loss=1.0511139631271362, loss=1.0511139631271362 (172.588573s)
+INFO:niftynet:2020-06-17 08:03:04,756: training iter 3445, total_loss=0.5687092542648315, loss=0.5687092542648315 (178.506063s)
+INFO:niftynet:2020-06-17 08:06:16,703: training iter 3446, total_loss=0.6003697514533997, loss=0.6003697514533997 (191.924930s)
+INFO:niftynet:2020-06-17 08:09:11,336: training iter 3447, total_loss=0.7026684284210205, loss=0.7026684284210205 (174.612004s)
+INFO:niftynet:2020-06-17 08:12:12,299: training iter 3448, total_loss=0.3447472155094147, loss=0.3447472155094147 (180.946085s)
+INFO:niftynet:2020-06-17 08:15:10,352: training iter 3449, total_loss=0.7109567523002625, loss=0.7109567523002625 (178.024501s)
+INFO:niftynet:2020-06-17 08:18:07,341: training iter 3450, total_loss=0.708829402923584, loss=0.708829402923584 (176.968168s)
+INFO:niftynet:2020-06-17 08:18:43,178:     validation iter 3450, total_loss=0.45116427540779114, loss=0.45116427540779114 (35.822789s)
+INFO:niftynet:2020-06-17 08:21:33,948: training iter 3451, total_loss=0.7095255851745605, loss=0.7095255851745605 (170.761298s)
+INFO:niftynet:2020-06-17 08:24:29,185: training iter 3452, total_loss=0.5518684983253479, loss=0.5518684983253479 (175.218490s)
+INFO:niftynet:2020-06-17 08:27:16,308: training iter 3453, total_loss=0.32900598645210266, loss=0.32900598645210266 (167.101267s)
+INFO:niftynet:2020-06-17 08:30:13,144: training iter 3454, total_loss=0.33745893836021423, loss=0.33745893836021423 (176.821432s)
+INFO:niftynet:2020-06-17 08:33:19,467: training iter 3455, total_loss=0.8333628177642822, loss=0.8333628177642822 (186.292432s)
+INFO:niftynet:2020-06-17 08:36:19,823: training iter 3456, total_loss=0.34961214661598206, loss=0.34961214661598206 (180.317375s)
+INFO:niftynet:2020-06-17 08:39:23,855: training iter 3457, total_loss=0.505570650100708, loss=0.505570650100708 (184.005682s)
+INFO:niftynet:2020-06-17 08:42:26,937: training iter 3458, total_loss=0.30858030915260315, loss=0.30858030915260315 (183.060019s)
+INFO:niftynet:2020-06-17 08:45:23,727: training iter 3459, total_loss=0.30762290954589844, loss=0.30762290954589844 (176.765702s)
+INFO:niftynet:2020-06-17 08:48:30,093: training iter 3460, total_loss=0.30480191111564636, loss=0.30480191111564636 (186.350775s)
+INFO:niftynet:2020-06-17 08:51:30,250: training iter 3461, total_loss=0.2963118851184845, loss=0.2963118851184845 (180.053104s)
+INFO:niftynet:2020-06-17 08:54:20,686: training iter 3462, total_loss=0.3434695899486542, loss=0.3434695899486542 (170.417632s)
+INFO:niftynet:2020-06-17 08:57:11,722: training iter 3463, total_loss=0.5309023857116699, loss=0.5309023857116699 (171.017727s)
+INFO:niftynet:2020-06-17 09:00:05,680: training iter 3464, total_loss=0.3023759424686432, loss=0.3023759424686432 (173.948593s)
+INFO:niftynet:2020-06-17 09:03:14,545: training iter 3465, total_loss=0.693634033203125, loss=0.693634033203125 (188.851516s)
+INFO:niftynet:2020-06-17 09:06:04,981: training iter 3466, total_loss=0.894294023513794, loss=0.894294023513794 (170.418700s)
+INFO:niftynet:2020-06-17 09:08:55,002: training iter 3467, total_loss=0.33929166197776794, loss=0.33929166197776794 (169.997926s)
+INFO:niftynet:2020-06-17 09:11:44,042: training iter 3468, total_loss=0.9741904139518738, loss=0.9741904139518738 (169.018128s)
+INFO:niftynet:2020-06-17 09:15:13,320: training iter 3469, total_loss=0.3647567331790924, loss=0.3647567331790924 (209.251934s)
+INFO:niftynet:2020-06-17 09:19:01,196: training iter 3470, total_loss=0.29120057821273804, loss=0.29120057821273804 (227.860997s)
+INFO:niftynet:2020-06-17 09:21:49,329: training iter 3471, total_loss=0.9528467059135437, loss=0.9528467059135437 (168.107038s)
+INFO:niftynet:2020-06-17 09:24:33,914: training iter 3472, total_loss=0.6671180725097656, loss=0.6671180725097656 (164.575199s)
+INFO:niftynet:2020-06-17 09:27:35,127: training iter 3473, total_loss=0.8828544616699219, loss=0.8828544616699219 (181.197358s)
+INFO:niftynet:2020-06-17 09:30:21,453: training iter 3474, total_loss=0.34519389271736145, loss=0.34519389271736145 (166.308634s)
+INFO:niftynet:2020-06-17 09:33:09,272: training iter 3475, total_loss=0.3247992992401123, loss=0.3247992992401123 (167.801164s)
+INFO:niftynet:2020-06-17 09:35:59,300: training iter 3476, total_loss=0.32568487524986267, loss=0.32568487524986267 (170.013657s)
+INFO:niftynet:2020-06-17 09:38:47,607: training iter 3477, total_loss=0.7633898258209229, loss=0.7633898258209229 (168.289003s)
+INFO:niftynet:2020-06-17 09:41:28,316: training iter 3478, total_loss=0.5123670697212219, loss=0.5123670697212219 (160.681866s)
+INFO:niftynet:2020-06-17 09:44:32,854: training iter 3479, total_loss=0.35097387433052063, loss=0.35097387433052063 (184.510756s)
+INFO:niftynet:2020-06-17 09:47:26,306: training iter 3480, total_loss=0.47722557187080383, loss=0.47722557187080383 (173.427200s)
+INFO:niftynet:2020-06-17 09:50:11,216: training iter 3481, total_loss=0.31586000323295593, loss=0.31586000323295593 (164.791443s)
+INFO:niftynet:2020-06-17 09:52:58,690: training iter 3482, total_loss=0.32841792702674866, loss=0.32841792702674866 (167.453563s)
+INFO:niftynet:2020-06-17 09:55:47,005: training iter 3483, total_loss=0.3091748356819153, loss=0.3091748356819153 (168.292201s)
+INFO:niftynet:2020-06-17 09:58:30,456: training iter 3484, total_loss=0.30798935890197754, loss=0.30798935890197754 (163.432196s)
+INFO:niftynet:2020-06-17 10:01:11,024: training iter 3485, total_loss=0.6946250796318054, loss=0.6946250796318054 (160.553666s)
+INFO:niftynet:2020-06-17 10:04:01,350: training iter 3486, total_loss=1.0757951736450195, loss=1.0757951736450195 (170.308180s)
+INFO:niftynet:2020-06-17 10:06:44,416: training iter 3487, total_loss=0.3113534450531006, loss=0.3113534450531006 (163.050429s)
+INFO:niftynet:2020-06-17 10:09:29,794: training iter 3488, total_loss=0.5704626441001892, loss=0.5704626441001892 (165.350350s)
+INFO:niftynet:2020-06-17 10:12:10,356: training iter 3489, total_loss=0.309996098279953, loss=0.309996098279953 (160.541031s)
+INFO:niftynet:2020-06-17 10:14:51,694: training iter 3490, total_loss=0.3279540240764618, loss=0.3279540240764618 (161.319358s)
+INFO:niftynet:2020-06-17 10:17:43,259: training iter 3491, total_loss=0.57765132188797, loss=0.57765132188797 (171.545519s)
+INFO:niftynet:2020-06-17 10:20:31,209: training iter 3492, total_loss=0.6735779643058777, loss=0.6735779643058777 (167.931295s)
+INFO:niftynet:2020-06-17 10:23:21,448: training iter 3493, total_loss=0.7422712445259094, loss=0.7422712445259094 (170.216394s)
+INFO:niftynet:2020-06-17 10:26:18,516: training iter 3494, total_loss=0.3086378872394562, loss=0.3086378872394562 (177.048774s)
+INFO:niftynet:2020-06-17 10:29:02,039: training iter 3495, total_loss=0.5138623118400574, loss=0.5138623118400574 (163.502819s)
+INFO:niftynet:2020-06-17 10:31:47,161: training iter 3496, total_loss=0.3106323480606079, loss=0.3106323480606079 (165.098069s)
+INFO:niftynet:2020-06-17 10:34:30,809: training iter 3497, total_loss=0.6940112113952637, loss=0.6940112113952637 (163.635123s)
+INFO:niftynet:2020-06-17 10:37:13,272: training iter 3498, total_loss=0.5892871618270874, loss=0.5892871618270874 (162.442991s)
+INFO:niftynet:2020-06-17 10:40:59,324: training iter 3499, total_loss=0.6780910491943359, loss=0.6780910491943359 (226.033378s)
+INFO:niftynet:2020-06-17 10:44:21,216: training iter 3500, total_loss=0.6702191233634949, loss=0.6702191233634949 (201.861692s)
+INFO:niftynet:2020-06-17 10:45:00,362:     validation iter 3500, total_loss=0.47260940074920654, loss=0.47260940074920654 (39.072079s)
+INFO:niftynet:2020-06-17 10:49:22,059: training iter 3501, total_loss=0.8587051033973694, loss=0.8587051033973694 (261.657317s)
+WARNING:niftynet:2020-06-17 10:52:59,102: User cancelled application
+INFO:niftynet:2020-06-17 10:52:59,111: cleaning up...
+INFO:niftynet:2020-06-17 10:53:06,749: iter 3502 saved: /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt
+INFO:niftynet:2020-06-17 10:53:06,750: stopping sampling threads
+WARNING:niftynet:2020-06-17 10:53:07,366: stopped early, incomplete iterations.
+INFO:niftynet:2020-06-17 10:53:07,367: SegmentationApplication stopped (time in second 34414.19).
+INFO:niftynet:2020-06-17 13:24:44,126: starting segmentation application
+INFO:niftynet:2020-06-17 13:24:44,127: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-17 13:24:44,127: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-17 13:24:44,128: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-17 13:24:44,152: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-17 13:24:44,152: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-17 13:24:44,153: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-17 13:24:44,178: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-17 13:24:44,179: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-17 13:24:44,179: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+WARNING:niftynet:2020-06-17 13:24:44,193: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-17 13:24:44,193: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-17 13:24:44,199: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'seg', 'label']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-17 13:24:44,355: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-17 13:24:45,448: Image reader: loading 87 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 13:24:45,448: Image reader: loading 87 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 13:24:46,055: Image reader: loading 44 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 13:24:46,055: Image reader: loading 44 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 13:24:46,078: reading size of preprocessed images
+WARNING:niftynet:2020-06-17 13:24:46,082: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-17 13:24:46,104: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-17 13:24:46,105: reading size of preprocessed images
+WARNING:niftynet:2020-06-17 13:24:46,106: sampler queue_length should be larger than batch_size, defaulting to batch_size * 5.0 (30).
+INFO:niftynet:2020-06-17 13:24:46,113: initialised resize sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+INFO:niftynet:2020-06-17 13:24:46,138: using DenseVNet
+WARNING:niftynet:2020-06-17 13:24:46,139: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/application/base_application.py:203: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:niftynet:2020-06-17 13:24:46,164: Initialising Dataset from 87 subjects...
+INFO:niftynet:2020-06-17 13:24:46,698: Initialising Dataset from 44 subjects...
+WARNING:niftynet:2020-06-17 13:24:46,836: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:60: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:niftynet:2020-06-17 13:24:46,850: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/affine_augmentation.py:68: The name tf.matrix_solve_ls is deprecated. Please use tf.linalg.lstsq instead.
+
+WARNING:niftynet:2020-06-17 13:24:47,384: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-17 13:24:51,001: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/linear_resize.py:60: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:niftynet:2020-06-17 13:24:52,064: 
+                    niftyreg_image_resampling is not installed; falling back onto
+                    niftynet.layer.resampler.ResamplerLayer. To allow fast resampling,
+                    please see installation instructions in
+                    niftynet/contrib/niftyreg_image_resampling/README.md
+                    
+WARNING:niftynet:2020-06-17 13:24:52,361: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_optimiser.py:31: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:niftynet:2020-06-17 13:24:52,369: Import [dice] from /Users/jayasuriyasenthilvelan/niftynet/extensions/dense_vnet_abdominal_ct/dice_hinge.py.
+WARNING:niftynet:2020-06-17 13:24:57,511: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/application_variables.py:188: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:niftynet:2020-06-17 13:24:57,513: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_tensorboard.py:49: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+WARNING:niftynet:2020-06-17 13:25:10,356: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/engine/handler_model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:niftynet:2020-06-17 13:25:11,358: Restoring parameters from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt-3502
+INFO:niftynet:2020-06-17 13:29:31,272: training iter 3503, total_loss=0.675051748752594, loss=0.675051748752594 (258.228346s)
+INFO:niftynet:2020-06-17 13:33:36,948: training iter 3504, total_loss=0.690334141254425, loss=0.690334141254425 (245.606377s)
+INFO:niftynet:2020-06-17 13:36:46,780: training iter 3505, total_loss=0.2944803237915039, loss=0.2944803237915039 (189.811005s)
+INFO:niftynet:2020-06-17 13:40:42,223: training iter 3506, total_loss=1.1468712091445923, loss=1.1468712091445923 (235.418497s)
+INFO:niftynet:2020-06-17 13:44:37,522: training iter 3507, total_loss=0.3656954765319824, loss=0.3656954765319824 (235.286931s)
+INFO:niftynet:2020-06-17 13:48:02,043: training iter 3508, total_loss=0.31550633907318115, loss=0.31550633907318115 (204.506755s)
+INFO:niftynet:2020-06-17 13:50:57,196: training iter 3509, total_loss=0.4878300130367279, loss=0.4878300130367279 (175.133905s)
+INFO:niftynet:2020-06-17 13:53:39,749: training iter 3510, total_loss=0.31526270508766174, loss=0.31526270508766174 (162.538085s)
+INFO:niftynet:2020-06-17 13:56:36,312: training iter 3511, total_loss=1.234854817390442, loss=1.234854817390442 (176.552613s)
+INFO:niftynet:2020-06-17 13:59:21,054: training iter 3512, total_loss=0.3172583281993866, loss=0.3172583281993866 (164.728078s)
+INFO:niftynet:2020-06-17 14:02:07,815: training iter 3513, total_loss=0.3650864362716675, loss=0.3650864362716675 (166.746009s)
+INFO:niftynet:2020-06-17 14:06:59,074: training iter 3514, total_loss=0.34795284271240234, loss=0.34795284271240234 (291.238914s)
+INFO:niftynet:2020-06-17 14:10:59,086: training iter 3515, total_loss=0.3321627378463745, loss=0.3321627378463745 (239.991320s)
+INFO:niftynet:2020-06-17 14:15:31,003: training iter 3516, total_loss=0.37856101989746094, loss=0.37856101989746094 (271.901598s)
+INFO:niftynet:2020-06-17 14:19:02,297: training iter 3517, total_loss=0.30905768275260925, loss=0.30905768275260925 (211.276439s)
+INFO:niftynet:2020-06-17 14:22:15,579: training iter 3518, total_loss=0.3753564655780792, loss=0.3753564655780792 (193.256317s)
+INFO:niftynet:2020-06-17 14:25:03,184: training iter 3519, total_loss=0.6801822781562805, loss=0.6801822781562805 (167.592268s)
+INFO:niftynet:2020-06-17 14:28:07,309: training iter 3520, total_loss=0.32279589772224426, loss=0.32279589772224426 (183.941262s)
+INFO:niftynet:2020-06-17 14:31:06,963: training iter 3521, total_loss=0.6943070292472839, loss=0.6943070292472839 (179.604121s)
+INFO:niftynet:2020-06-17 14:33:57,627: training iter 3522, total_loss=0.8665148615837097, loss=0.8665148615837097 (170.649708s)
+INFO:niftynet:2020-06-17 14:36:38,808: training iter 3523, total_loss=0.3281691372394562, loss=0.3281691372394562 (161.162065s)
+INFO:niftynet:2020-06-17 14:39:33,654: training iter 3524, total_loss=0.3181181252002716, loss=0.3181181252002716 (174.833160s)
+INFO:niftynet:2020-06-17 14:42:51,455: training iter 3525, total_loss=1.0662411451339722, loss=1.0662411451339722 (197.784347s)
+INFO:niftynet:2020-06-17 14:43:43,080:     validation iter 3525, total_loss=0.7938079833984375, loss=0.7938079833984375 (51.613866s)
+INFO:niftynet:2020-06-17 14:46:49,850: training iter 3526, total_loss=0.32269394397735596, loss=0.32269394397735596 (186.759285s)
+INFO:niftynet:2020-06-17 14:49:43,631: training iter 3527, total_loss=0.5646423697471619, loss=0.5646423697471619 (173.763546s)
+INFO:niftynet:2020-06-17 14:52:29,770: training iter 3528, total_loss=0.29315611720085144, loss=0.29315611720085144 (166.117707s)
+INFO:niftynet:2020-06-17 14:56:22,341: training iter 3529, total_loss=0.4763807952404022, loss=0.4763807952404022 (232.551810s)
+INFO:niftynet:2020-06-17 14:59:50,642: training iter 3530, total_loss=0.5572302937507629, loss=0.5572302937507629 (208.271675s)
+INFO:niftynet:2020-06-17 15:02:43,590: training iter 3531, total_loss=0.3197622299194336, loss=0.3197622299194336 (172.932755s)
+INFO:niftynet:2020-06-17 15:05:34,897: training iter 3532, total_loss=0.3022277355194092, loss=0.3022277355194092 (171.279099s)
+INFO:niftynet:2020-06-17 15:08:23,107: training iter 3533, total_loss=0.3045969009399414, loss=0.3045969009399414 (168.193519s)
+INFO:niftynet:2020-06-17 15:11:23,286: training iter 3534, total_loss=0.33230718970298767, loss=0.33230718970298767 (180.160412s)
+INFO:niftynet:2020-06-17 15:14:16,461: training iter 3535, total_loss=1.0455280542373657, loss=1.0455280542373657 (173.161364s)
+INFO:niftynet:2020-06-17 15:17:11,099: training iter 3536, total_loss=0.31169041991233826, loss=0.31169041991233826 (174.625163s)
+INFO:niftynet:2020-06-17 15:20:07,037: training iter 3537, total_loss=0.298605352640152, loss=0.298605352640152 (175.918242s)
+INFO:niftynet:2020-06-17 15:22:58,685: training iter 3538, total_loss=0.4728282690048218, loss=0.4728282690048218 (171.635716s)
+INFO:niftynet:2020-06-17 15:25:44,956: training iter 3539, total_loss=0.2989357113838196, loss=0.2989357113838196 (166.250759s)
+INFO:niftynet:2020-06-17 15:29:20,135: training iter 3540, total_loss=0.296665757894516, loss=0.296665757894516 (215.089957s)
+INFO:niftynet:2020-06-17 15:32:05,448: training iter 3541, total_loss=0.2901489734649658, loss=0.2901489734649658 (165.255666s)
+INFO:niftynet:2020-06-17 15:34:46,354: training iter 3542, total_loss=0.3938795328140259, loss=0.3938795328140259 (160.884779s)
+INFO:niftynet:2020-06-17 15:37:23,635: training iter 3543, total_loss=0.7698712944984436, loss=0.7698712944984436 (157.259769s)
+INFO:niftynet:2020-06-17 15:40:15,405: training iter 3544, total_loss=0.6522744297981262, loss=0.6522744297981262 (171.751558s)
+INFO:niftynet:2020-06-17 15:43:26,476: training iter 3545, total_loss=0.6779990792274475, loss=0.6779990792274475 (191.054615s)
+INFO:niftynet:2020-06-17 15:46:32,298: training iter 3546, total_loss=0.34644660353660583, loss=0.34644660353660583 (185.802903s)
+INFO:niftynet:2020-06-17 15:49:36,764: training iter 3547, total_loss=0.663520097732544, loss=0.663520097732544 (184.446601s)
+INFO:niftynet:2020-06-17 15:52:19,274: training iter 3548, total_loss=1.0293980836868286, loss=1.0293980836868286 (162.496538s)
+INFO:niftynet:2020-06-17 15:55:18,199: training iter 3549, total_loss=0.7064359188079834, loss=0.7064359188079834 (178.906090s)
+INFO:niftynet:2020-06-17 15:58:10,938: training iter 3550, total_loss=0.2981886863708496, loss=0.2981886863708496 (172.709562s)
+INFO:niftynet:2020-06-17 15:58:46,567:     validation iter 3550, total_loss=1.3962701559066772, loss=1.3962701559066772 (35.615203s)
+INFO:niftynet:2020-06-17 16:02:09,665: training iter 3551, total_loss=0.30683577060699463, loss=0.30683577060699463 (203.090157s)
+INFO:niftynet:2020-06-17 16:06:33,544: training iter 3552, total_loss=0.31983131170272827, loss=0.31983131170272827 (263.865249s)
+INFO:niftynet:2020-06-17 16:09:53,089: training iter 3553, total_loss=0.34427180886268616, loss=0.34427180886268616 (199.523763s)
+INFO:niftynet:2020-06-17 16:12:50,995: training iter 3554, total_loss=0.6311304569244385, loss=0.6311304569244385 (177.891053s)
+INFO:niftynet:2020-06-17 16:15:38,020: training iter 3555, total_loss=0.32749229669570923, loss=0.32749229669570923 (167.001423s)
+INFO:niftynet:2020-06-17 16:18:26,287: training iter 3556, total_loss=0.33055901527404785, loss=0.33055901527404785 (168.245170s)
+INFO:niftynet:2020-06-17 16:21:18,938: training iter 3557, total_loss=0.3025156259536743, loss=0.3025156259536743 (172.628086s)
+INFO:niftynet:2020-06-17 16:24:45,379: training iter 3558, total_loss=0.30686140060424805, loss=0.30686140060424805 (206.426711s)
+INFO:niftynet:2020-06-17 16:28:03,141: training iter 3559, total_loss=0.30128586292266846, loss=0.30128586292266846 (197.747989s)
+INFO:niftynet:2020-06-17 16:30:53,235: training iter 3560, total_loss=0.44004619121551514, loss=0.44004619121551514 (169.966032s)
+INFO:niftynet:2020-06-17 16:33:46,968: training iter 3561, total_loss=1.0411561727523804, loss=1.0411561727523804 (173.691973s)
+INFO:niftynet:2020-06-17 16:36:37,292: training iter 3562, total_loss=0.3692004978656769, loss=0.3692004978656769 (170.304621s)
+INFO:niftynet:2020-06-17 16:39:36,631: training iter 3563, total_loss=0.816594123840332, loss=0.816594123840332 (179.316902s)
+INFO:niftynet:2020-06-17 16:42:37,077: training iter 3564, total_loss=0.6678895950317383, loss=0.6678895950317383 (180.430152s)
+INFO:niftynet:2020-06-17 16:46:12,316: training iter 3565, total_loss=0.2915709316730499, loss=0.2915709316730499 (215.221213s)
+INFO:niftynet:2020-06-17 16:49:47,518: training iter 3566, total_loss=0.6457385420799255, loss=0.6457385420799255 (215.185557s)
+INFO:niftynet:2020-06-17 16:52:48,315: training iter 3567, total_loss=0.4746592044830322, loss=0.4746592044830322 (180.778388s)
+INFO:niftynet:2020-06-17 16:55:36,189: training iter 3568, total_loss=0.4364646375179291, loss=0.4364646375179291 (167.858398s)
+INFO:niftynet:2020-06-17 16:58:20,466: training iter 3569, total_loss=0.30778768658638, loss=0.30778768658638 (164.257424s)
+INFO:niftynet:2020-06-17 17:01:07,932: training iter 3570, total_loss=0.7006650567054749, loss=0.7006650567054749 (167.447245s)
+INFO:niftynet:2020-06-17 17:03:51,650: training iter 3571, total_loss=0.6689373850822449, loss=0.6689373850822449 (163.701558s)
+INFO:niftynet:2020-06-17 17:06:40,003: training iter 3572, total_loss=1.0388339757919312, loss=1.0388339757919312 (168.336892s)
+INFO:niftynet:2020-06-17 17:09:23,744: training iter 3573, total_loss=0.39538732171058655, loss=0.39538732171058655 (163.719775s)
+INFO:niftynet:2020-06-17 17:12:03,946: training iter 3574, total_loss=0.9502299427986145, loss=0.9502299427986145 (160.185781s)
+INFO:niftynet:2020-06-17 17:14:55,034: training iter 3575, total_loss=0.5108441710472107, loss=0.5108441710472107 (171.065977s)
+INFO:niftynet:2020-06-17 17:15:27,854:     validation iter 3575, total_loss=0.3528020679950714, loss=0.3528020679950714 (32.800655s)
+INFO:niftynet:2020-06-17 17:18:10,915: training iter 3576, total_loss=0.7008249163627625, loss=0.7008249163627625 (163.049943s)
+INFO:niftynet:2020-06-17 17:21:01,076: training iter 3577, total_loss=0.45921310782432556, loss=0.45921310782432556 (170.140883s)
+INFO:niftynet:2020-06-17 17:23:48,255: training iter 3578, total_loss=0.28487440943717957, loss=0.28487440943717957 (167.160301s)
+INFO:niftynet:2020-06-17 17:26:32,901: training iter 3579, total_loss=0.321743905544281, loss=0.321743905544281 (164.631192s)
+INFO:niftynet:2020-06-17 17:29:35,673: training iter 3580, total_loss=0.30765536427497864, loss=0.30765536427497864 (182.667759s)
+INFO:niftynet:2020-06-17 17:32:21,651: training iter 3581, total_loss=0.5707184076309204, loss=0.5707184076309204 (165.943517s)
+INFO:niftynet:2020-06-17 17:35:10,552: training iter 3582, total_loss=0.46262070536613464, loss=0.46262070536613464 (168.885596s)
+INFO:niftynet:2020-06-17 17:37:56,092: training iter 3583, total_loss=0.8282329440116882, loss=0.8282329440116882 (165.521131s)
+INFO:niftynet:2020-06-17 17:40:42,631: training iter 3584, total_loss=0.2987048327922821, loss=0.2987048327922821 (166.526858s)
+INFO:niftynet:2020-06-17 17:43:27,395: training iter 3585, total_loss=1.1089648008346558, loss=1.1089648008346558 (164.741426s)
+INFO:niftynet:2020-06-17 17:46:25,469: training iter 3586, total_loss=0.2873022258281708, loss=0.2873022258281708 (178.056855s)
+INFO:niftynet:2020-06-17 17:49:10,692: training iter 3587, total_loss=0.5049931406974792, loss=0.5049931406974792 (165.203962s)
+INFO:niftynet:2020-06-17 17:52:27,556: training iter 3588, total_loss=0.3192810118198395, loss=0.3192810118198395 (196.849894s)
+INFO:niftynet:2020-06-17 17:55:31,506: training iter 3589, total_loss=0.5002496838569641, loss=0.5002496838569641 (183.936487s)
+INFO:niftynet:2020-06-17 17:58:23,228: training iter 3590, total_loss=0.30413493514060974, loss=0.30413493514060974 (171.695351s)
+INFO:niftynet:2020-06-17 18:01:22,301: training iter 3591, total_loss=0.3110823631286621, loss=0.3110823631286621 (179.054153s)
+INFO:niftynet:2020-06-17 18:04:19,388: training iter 3592, total_loss=0.29134640097618103, loss=0.29134640097618103 (177.064698s)
+INFO:niftynet:2020-06-17 18:07:00,410: training iter 3593, total_loss=0.2782098650932312, loss=0.2782098650932312 (161.002010s)
+INFO:niftynet:2020-06-17 18:09:36,257: training iter 3594, total_loss=0.28341707587242126, loss=0.28341707587242126 (155.823226s)
+INFO:niftynet:2020-06-17 18:12:37,725: training iter 3595, total_loss=0.6824154257774353, loss=0.6824154257774353 (181.448892s)
+INFO:niftynet:2020-06-17 18:16:15,217: training iter 3596, total_loss=0.818255603313446, loss=0.818255603313446 (217.473878s)
+INFO:niftynet:2020-06-17 18:19:03,692: training iter 3597, total_loss=0.30262014269828796, loss=0.30262014269828796 (168.451964s)
+INFO:niftynet:2020-06-17 18:22:20,444: training iter 3598, total_loss=0.3181086480617523, loss=0.3181086480617523 (196.732155s)
+INFO:niftynet:2020-06-17 18:25:04,958: training iter 3599, total_loss=0.931157112121582, loss=0.931157112121582 (164.492772s)
+INFO:niftynet:2020-06-17 18:27:40,227: training iter 3600, total_loss=0.3845702111721039, loss=0.3845702111721039 (155.133777s)
+INFO:niftynet:2020-06-17 18:28:27,370:     validation iter 3600, total_loss=0.3445869982242584, loss=0.3445869982242584 (47.002289s)
+INFO:niftynet:2020-06-17 18:31:08,638: training iter 3601, total_loss=0.2808919847011566, loss=0.2808919847011566 (161.246903s)
+INFO:niftynet:2020-06-17 18:34:17,582: training iter 3602, total_loss=0.3209209740161896, loss=0.3209209740161896 (188.925105s)
+INFO:niftynet:2020-06-17 18:37:04,682: training iter 3603, total_loss=0.27650895714759827, loss=0.27650895714759827 (167.080029s)
+INFO:niftynet:2020-06-17 18:39:39,922: training iter 3604, total_loss=0.5675082802772522, loss=0.5675082802772522 (155.220063s)
+INFO:niftynet:2020-06-17 18:43:12,855: training iter 3605, total_loss=0.6950617432594299, loss=0.6950617432594299 (212.910648s)
+INFO:niftynet:2020-06-17 18:47:39,211: training iter 3606, total_loss=0.2936594486236572, loss=0.2936594486236572 (266.343895s)
+INFO:niftynet:2020-06-17 18:51:20,926: training iter 3607, total_loss=0.8518922328948975, loss=0.8518922328948975 (221.696243s)
+INFO:niftynet:2020-06-17 18:54:47,516: training iter 3608, total_loss=0.46781304478645325, loss=0.46781304478645325 (206.575058s)
+INFO:niftynet:2020-06-17 18:58:13,134: training iter 3609, total_loss=0.28847387433052063, loss=0.28847387433052063 (205.598699s)
+INFO:niftynet:2020-06-17 19:01:28,641: training iter 3610, total_loss=0.6652411222457886, loss=0.6652411222457886 (195.486277s)
+INFO:niftynet:2020-06-17 19:05:12,399: training iter 3611, total_loss=0.46896877884864807, loss=0.46896877884864807 (223.731040s)
+INFO:niftynet:2020-06-17 19:08:39,666: training iter 3612, total_loss=0.29298460483551025, loss=0.29298460483551025 (207.254542s)
+INFO:niftynet:2020-06-17 19:12:58,027: training iter 3613, total_loss=0.31240877509117126, loss=0.31240877509117126 (258.348923s)
+INFO:niftynet:2020-06-17 19:17:37,063: training iter 3614, total_loss=0.33816373348236084, loss=0.33816373348236084 (279.019550s)
+INFO:niftynet:2020-06-17 19:22:01,261: training iter 3615, total_loss=0.31216850876808167, loss=0.31216850876808167 (264.183094s)
+INFO:niftynet:2020-06-17 19:26:20,206: training iter 3616, total_loss=0.6467576026916504, loss=0.6467576026916504 (258.928108s)
+INFO:niftynet:2020-06-17 19:30:49,010: training iter 3617, total_loss=1.078453779220581, loss=1.078453779220581 (268.787331s)
+INFO:niftynet:2020-06-17 19:35:21,511: training iter 3618, total_loss=0.28477418422698975, loss=0.28477418422698975 (272.485187s)
+INFO:niftynet:2020-06-17 19:39:30,693: training iter 3619, total_loss=0.33480700850486755, loss=0.33480700850486755 (249.159141s)
+INFO:niftynet:2020-06-17 19:43:16,654: training iter 3620, total_loss=0.4895533323287964, loss=0.4895533323287964 (225.857549s)
+INFO:niftynet:2020-06-17 19:46:47,736: training iter 3621, total_loss=0.2881115972995758, loss=0.2881115972995758 (210.985963s)
+INFO:niftynet:2020-06-17 19:49:40,463: training iter 3622, total_loss=1.0074702501296997, loss=1.0074702501296997 (172.711044s)
+INFO:niftynet:2020-06-17 19:52:27,393: training iter 3623, total_loss=0.2916976511478424, loss=0.2916976511478424 (166.913071s)
+INFO:niftynet:2020-06-17 19:55:07,467: training iter 3624, total_loss=0.7116753458976746, loss=0.7116753458976746 (160.059742s)
+INFO:niftynet:2020-06-17 19:57:44,645: training iter 3625, total_loss=0.7033283114433289, loss=0.7033283114433289 (157.156116s)
+INFO:niftynet:2020-06-17 19:58:17,473:     validation iter 3625, total_loss=0.8819487690925598, loss=0.8819487690925598 (32.815419s)
+INFO:niftynet:2020-06-17 20:00:54,835: training iter 3626, total_loss=0.5564196705818176, loss=0.5564196705818176 (157.351419s)
+INFO:niftynet:2020-06-17 20:03:32,680: training iter 3627, total_loss=0.31131330132484436, loss=0.31131330132484436 (157.828388s)
+INFO:niftynet:2020-06-17 20:06:13,020: training iter 3628, total_loss=0.48851481080055237, loss=0.48851481080055237 (160.320338s)
+INFO:niftynet:2020-06-17 20:08:52,056: training iter 3629, total_loss=0.6690393090248108, loss=0.6690393090248108 (159.023140s)
+INFO:niftynet:2020-06-17 20:11:29,613: training iter 3630, total_loss=0.4227715730667114, loss=0.4227715730667114 (157.536470s)
+INFO:niftynet:2020-06-17 20:14:08,618: training iter 3631, total_loss=0.2825581431388855, loss=0.2825581431388855 (158.986687s)
+INFO:niftynet:2020-06-17 20:16:47,045: training iter 3632, total_loss=0.49885115027427673, loss=0.49885115027427673 (158.403212s)
+INFO:niftynet:2020-06-17 20:19:30,015: training iter 3633, total_loss=0.34593665599823, loss=0.34593665599823 (162.952796s)
+INFO:niftynet:2020-06-17 20:22:15,331: training iter 3634, total_loss=0.4553198516368866, loss=0.4553198516368866 (165.295835s)
+INFO:niftynet:2020-06-17 20:25:31,227: training iter 3635, total_loss=0.2959137260913849, loss=0.2959137260913849 (195.884216s)
+INFO:niftynet:2020-06-17 20:28:13,756: training iter 3636, total_loss=0.7465314865112305, loss=0.7465314865112305 (162.508408s)
+INFO:niftynet:2020-06-17 20:31:10,924: training iter 3637, total_loss=0.27566400170326233, loss=0.27566400170326233 (177.146620s)
+INFO:niftynet:2020-06-17 20:34:18,316: training iter 3638, total_loss=0.6537529826164246, loss=0.6537529826164246 (187.377731s)
+INFO:niftynet:2020-06-17 20:37:21,101: training iter 3639, total_loss=0.31730160117149353, loss=0.31730160117149353 (182.763067s)
+INFO:niftynet:2020-06-17 20:40:26,242: training iter 3640, total_loss=0.2984868288040161, loss=0.2984868288040161 (185.039753s)
+INFO:niftynet:2020-06-17 20:44:16,050: training iter 3641, total_loss=0.2913874089717865, loss=0.2913874089717865 (229.764144s)
+INFO:niftynet:2020-06-17 20:47:32,112: training iter 3642, total_loss=0.3093147575855255, loss=0.3093147575855255 (196.041249s)
+INFO:niftynet:2020-06-17 20:50:13,911: training iter 3643, total_loss=0.6956601738929749, loss=0.6956601738929749 (161.781251s)
+INFO:niftynet:2020-06-17 20:52:57,726: training iter 3644, total_loss=0.6663451790809631, loss=0.6663451790809631 (163.792663s)
+INFO:niftynet:2020-06-17 20:55:43,123: training iter 3645, total_loss=0.6544100642204285, loss=0.6544100642204285 (165.379608s)
+INFO:niftynet:2020-06-17 20:58:19,320: training iter 3646, total_loss=0.5884560942649841, loss=0.5884560942649841 (156.181046s)
+INFO:niftynet:2020-06-17 21:01:17,593: training iter 3647, total_loss=0.3076115846633911, loss=0.3076115846633911 (178.251871s)
+INFO:niftynet:2020-06-17 21:04:30,183: training iter 3648, total_loss=0.4665096700191498, loss=0.4665096700191498 (192.574842s)
+INFO:niftynet:2020-06-17 21:07:21,213: training iter 3649, total_loss=0.291249543428421, loss=0.291249543428421 (171.007848s)
+INFO:niftynet:2020-06-17 21:10:00,312: training iter 3650, total_loss=1.0777631998062134, loss=1.0777631998062134 (159.076427s)
+INFO:niftynet:2020-06-17 21:10:32,395:     validation iter 3650, total_loss=0.6887004375457764, loss=0.6887004375457764 (32.067022s)
+INFO:niftynet:2020-06-17 21:13:15,870: training iter 3651, total_loss=0.447767972946167, loss=0.447767972946167 (163.468579s)
+INFO:niftynet:2020-06-17 21:15:54,799: training iter 3652, total_loss=0.30948588252067566, loss=0.30948588252067566 (158.902150s)
+INFO:niftynet:2020-06-17 21:18:34,557: training iter 3653, total_loss=0.32913729548454285, loss=0.32913729548454285 (159.735613s)
+INFO:niftynet:2020-06-17 21:21:15,690: training iter 3654, total_loss=0.2830524742603302, loss=0.2830524742603302 (161.111760s)
+INFO:niftynet:2020-06-17 21:23:56,450: training iter 3655, total_loss=0.3098708391189575, loss=0.3098708391189575 (160.736196s)
+INFO:niftynet:2020-06-17 21:26:41,917: training iter 3656, total_loss=0.28381863236427307, loss=0.28381863236427307 (165.442388s)
+INFO:niftynet:2020-06-17 21:29:21,586: training iter 3657, total_loss=0.6761448383331299, loss=0.6761448383331299 (159.648867s)
+INFO:niftynet:2020-06-17 21:32:06,725: training iter 3658, total_loss=0.4212142527103424, loss=0.4212142527103424 (165.115886s)
+INFO:niftynet:2020-06-17 21:34:52,887: training iter 3659, total_loss=0.823233425617218, loss=0.823233425617218 (166.138187s)
+INFO:niftynet:2020-06-17 21:37:32,883: training iter 3660, total_loss=0.5330089926719666, loss=0.5330089926719666 (159.871815s)
+INFO:niftynet:2020-06-17 21:40:17,910: training iter 3661, total_loss=0.2898968458175659, loss=0.2898968458175659 (164.904969s)
+INFO:niftynet:2020-06-17 21:43:08,899: training iter 3662, total_loss=0.6814315319061279, loss=0.6814315319061279 (170.966224s)
+INFO:niftynet:2020-06-17 21:46:35,573: training iter 3663, total_loss=0.3611243665218353, loss=0.3611243665218353 (206.660855s)
+INFO:niftynet:2020-06-17 21:49:46,023: training iter 3664, total_loss=0.29379305243492126, loss=0.29379305243492126 (190.436078s)
+INFO:niftynet:2020-06-17 21:53:21,568: training iter 3665, total_loss=0.6981787085533142, loss=0.6981787085533142 (215.531607s)
+INFO:niftynet:2020-06-17 21:56:08,009: training iter 3666, total_loss=0.6275214552879333, loss=0.6275214552879333 (166.424793s)
+INFO:niftynet:2020-06-17 21:58:48,038: training iter 3667, total_loss=0.4721275866031647, loss=0.4721275866031647 (160.003389s)
+INFO:niftynet:2020-06-17 22:01:27,100: training iter 3668, total_loss=0.32071682810783386, loss=0.32071682810783386 (159.044431s)
+INFO:niftynet:2020-06-17 22:04:06,746: training iter 3669, total_loss=0.292728066444397, loss=0.292728066444397 (159.626716s)
+INFO:niftynet:2020-06-17 22:06:45,743: training iter 3670, total_loss=0.3193870782852173, loss=0.3193870782852173 (158.985387s)
+INFO:niftynet:2020-06-17 22:09:19,341: training iter 3671, total_loss=0.6779506802558899, loss=0.6779506802558899 (153.572182s)
+INFO:niftynet:2020-06-17 22:11:52,530: training iter 3672, total_loss=0.6657742857933044, loss=0.6657742857933044 (153.168808s)
+INFO:niftynet:2020-06-17 22:14:39,310: training iter 3673, total_loss=0.6428217887878418, loss=0.6428217887878418 (166.758999s)
+INFO:niftynet:2020-06-17 22:17:18,279: training iter 3674, total_loss=0.4335521161556244, loss=0.4335521161556244 (158.950081s)
+INFO:niftynet:2020-06-17 22:19:59,194: training iter 3675, total_loss=0.6789665818214417, loss=0.6789665818214417 (160.896502s)
+INFO:niftynet:2020-06-17 22:20:31,522:     validation iter 3675, total_loss=1.040765404701233, loss=1.040765404701233 (32.314516s)
+INFO:niftynet:2020-06-17 22:23:36,561: training iter 3676, total_loss=0.45302093029022217, loss=0.45302093029022217 (185.033832s)
+INFO:niftynet:2020-06-17 22:26:19,714: training iter 3677, total_loss=0.33539867401123047, loss=0.33539867401123047 (163.138205s)
+INFO:niftynet:2020-06-17 22:29:01,261: training iter 3678, total_loss=0.8099638819694519, loss=0.8099638819694519 (161.524197s)
+INFO:niftynet:2020-06-17 22:31:36,971: training iter 3679, total_loss=0.2812155783176422, loss=0.2812155783176422 (155.691360s)
+INFO:niftynet:2020-06-17 22:34:17,129: training iter 3680, total_loss=0.2562420070171356, loss=0.2562420070171356 (160.051138s)
+INFO:niftynet:2020-06-17 22:37:25,980: training iter 3681, total_loss=0.5498193502426147, loss=0.5498193502426147 (188.829792s)
+INFO:niftynet:2020-06-17 22:40:13,464: training iter 3682, total_loss=0.34546518325805664, loss=0.34546518325805664 (167.464753s)
+INFO:niftynet:2020-06-17 22:43:37,501: training iter 3683, total_loss=0.30372700095176697, loss=0.30372700095176697 (204.018694s)
+INFO:niftynet:2020-06-17 22:46:51,969: training iter 3684, total_loss=0.28074637055397034, loss=0.28074637055397034 (194.451975s)
+INFO:niftynet:2020-06-17 22:49:57,755: training iter 3685, total_loss=0.6639445424079895, loss=0.6639445424079895 (185.772491s)
+INFO:niftynet:2020-06-17 22:53:04,995: training iter 3686, total_loss=0.30592551827430725, loss=0.30592551827430725 (187.221936s)
+INFO:niftynet:2020-06-17 22:56:16,033: training iter 3687, total_loss=0.48007282614707947, loss=0.48007282614707947 (191.021487s)
+INFO:niftynet:2020-06-17 22:59:53,716: training iter 3688, total_loss=0.6508450508117676, loss=0.6508450508117676 (217.664193s)
+INFO:niftynet:2020-06-17 23:02:51,927: training iter 3689, total_loss=0.6596567630767822, loss=0.6596567630767822 (178.184935s)
+INFO:niftynet:2020-06-17 23:05:38,650: training iter 3690, total_loss=0.6286078691482544, loss=0.6286078691482544 (166.710016s)
+INFO:niftynet:2020-06-17 23:08:16,925: training iter 3691, total_loss=0.6180546879768372, loss=0.6180546879768372 (158.255462s)
+INFO:niftynet:2020-06-17 23:10:58,134: training iter 3692, total_loss=0.43524280190467834, loss=0.43524280190467834 (161.190023s)
+INFO:niftynet:2020-06-17 23:15:29,146: training iter 3693, total_loss=0.3021624982357025, loss=0.3021624982357025 (270.996537s)
+INFO:niftynet:2020-06-17 23:18:58,745: training iter 3694, total_loss=0.6669690012931824, loss=0.6669690012931824 (209.582681s)
+INFO:niftynet:2020-06-17 23:22:00,575: training iter 3695, total_loss=0.2917020618915558, loss=0.2917020618915558 (181.808190s)
+INFO:niftynet:2020-06-17 23:24:51,893: training iter 3696, total_loss=0.7038364410400391, loss=0.7038364410400391 (171.302866s)
+INFO:niftynet:2020-06-17 23:27:47,770: training iter 3697, total_loss=0.2772493362426758, loss=0.2772493362426758 (175.856587s)
+INFO:niftynet:2020-06-17 23:31:03,541: training iter 3698, total_loss=0.6462138295173645, loss=0.6462138295173645 (195.749460s)
+INFO:niftynet:2020-06-17 23:34:26,009: training iter 3699, total_loss=0.2974983751773834, loss=0.2974983751773834 (202.453411s)
+INFO:niftynet:2020-06-17 23:38:11,558: training iter 3700, total_loss=0.28505566716194153, loss=0.28505566716194153 (225.425949s)
+INFO:niftynet:2020-06-17 23:38:52,818:     validation iter 3700, total_loss=0.455296128988266, loss=0.455296128988266 (41.170761s)
+WARNING:niftynet:2020-06-17 23:42:20,212: User cancelled application
+INFO:niftynet:2020-06-17 23:42:20,228: cleaning up...
+INFO:niftynet:2020-06-17 23:42:28,621: iter 3701 saved: /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/model.ckpt
+INFO:niftynet:2020-06-17 23:42:28,621: stopping sampling threads
+WARNING:niftynet:2020-06-17 23:42:29,290: stopped early, incomplete iterations.
+INFO:niftynet:2020-06-17 23:42:29,291: SegmentationApplication stopped (time in second 37038.94).

@@ -1,0 +1,142 @@
+Input params at 2020-10-25 11:14:39.
+[CUSTOM]
+-- num_classes: 9
+-- output_prob: False
+-- label_normalisation: False
+-- softmax: True
+-- min_sampling_ratio: 0
+-- compulsory_labels: (0, 1)
+-- rand_samples: 0
+-- min_numb_labels: 1
+-- proba_connect: True
+-- evaluation_units: foreground
+-- do_mixup: False
+-- mixup_alpha: 0.2
+-- mix_match: False
+-- value: ()
+-- weight: ()
+-- label: ('label',)
+-- inferred: ('seg',)
+-- image: ('ct',)
+-- sampler: ()
+-- name: net_segment
+[CONFIG_FILE]
+-- path: /Users/pictureme/LiverSegPy/src/SIML_LiverSeg/lib/vnet/extensions/dense_vnet_abdominal_ct/config.ini
+[CT]
+-- csv_file: 
+-- csv_data_file: 
+-- to_ohe: False
+-- path_to_search: ./lib/vnet/data/dense_vnet_abdominal_ct/
+-- filename_contains: ('test-volume',)
+-- filename_not_contains: ()
+-- filename_removefromid: 
+-- interp_order: 1
+-- loader: None
+-- pixdim: ()
+-- axcodes: ('A', 'R', 'S')
+-- spatial_window_size: (144, 144, 144)
+[SEG]
+-- csv_file: 
+-- csv_data_file: 
+-- to_ohe: False
+-- path_to_search: ./lib/vnet/models/dense_vnet_abdominal_ct/segmentation_output/
+-- filename_contains: ('window_seg_', '__niftynet_out')
+-- filename_not_contains: ()
+-- filename_removefromid: 
+-- interp_order: 0
+-- loader: None
+-- pixdim: ()
+-- axcodes: ()
+-- spatial_window_size: (144, 144, 144)
+[LABEL]
+-- csv_file: 
+-- csv_data_file: 
+-- to_ohe: False
+-- path_to_search: ./lib/vnet/data/dense_vnet_abdominal_ct/
+-- filename_contains: ('label',)
+-- filename_not_contains: ()
+-- filename_removefromid: 
+-- interp_order: 0
+-- loader: None
+-- pixdim: ()
+-- axcodes: ('A', 'R', 'S')
+-- spatial_window_size: (144, 144, 144)
+[SYSTEM]
+-- cuda_devices: ""
+-- num_threads: 1
+-- num_gpus: 1
+-- model_dir: /Users/pictureme/LiverSegPy/src/SIML_LiverSeg/lib/vnet/models/dense_vnet_abdominal_ct
+-- dataset_split_file: ./dataset_split.csv
+-- event_handler: ('model_saver', 'model_restorer', 'sampler_threading', 'apply_gradients', 'output_interpreter', 'console_logger', 'tensorboard_logger', 'performance_logger')
+-- iteration_generator: iteration_generator
+-- queue_length: 36
+-- action: inference
+[NETWORK]
+-- name: dense_vnet
+-- activation_function: relu
+-- batch_size: 1
+-- smaller_final_batch_mode: pad
+-- decay: 0.0
+-- reg_type: L2
+-- volume_padding_size: (0, 0, 0)
+-- volume_padding_mode: minimum
+-- volume_padding_to_size: (0,)
+-- window_sampling: resize
+-- force_output_identity_resizing: False
+-- queue_length: 5
+-- multimod_foreground_type: and
+-- histogram_ref_file: ./histogram_ref_file.txt
+-- norm_type: percentile
+-- cutoff: (0.01, 0.99)
+-- foreground_type: otsu_plus
+-- normalisation: False
+-- rgb_normalisation: False
+-- whitening: False
+-- normalise_foreground_only: False
+-- weight_initializer: he_normal
+-- bias_initializer: zeros
+-- keep_prob: 1.0
+[TRAINING]
+-- optimiser: adam
+-- sample_per_volume: 1
+-- rotation_angle: ()
+-- rotation_angle_x: ()
+-- rotation_angle_y: ()
+-- rotation_angle_z: ()
+-- scaling_percentage: ()
+-- isotropic_scaling: False
+-- antialiasing: True
+-- bias_field_range: ()
+-- bf_order: 3
+-- random_flipping_axes: -1
+-- do_elastic_deformation: False
+-- num_ctrl_points: 4
+-- deformation_sigma: 15
+-- proportion_to_deform: 0.5
+-- lr: 0.001
+-- loss_type: dense_vnet_abdominal_ct.dice_hinge.dice
+-- starting_iter: 3502
+-- save_every_n: 1000
+-- tensorboard_every_n: 20
+-- max_iter: 3701
+-- max_checkpoints: 100
+-- validation_every_n: 25
+-- validation_max_iter: 1
+-- exclude_fraction_for_validation: 0.33
+-- exclude_fraction_for_inference: 0.0
+-- vars_to_restore: 
+-- vars_to_freeze: 
+-- patience: 100
+-- early_stopping_mode: mean
+[INFERENCE]
+-- spatial_window_size: (144, 144, 144)
+-- inference_iter: 3000
+-- dataset_to_infer: 
+-- save_seg_dir: ./segmentation_output/
+-- output_postfix: _niftynet_out
+-- output_interp_order: 0
+-- border: (0, 0, 0)
+-- fill_constant: 0.0
+[EVALUATION]
+-- evaluations: Dice
+-- save_csv_dir: ./lib/vnet/models/dense_vnet_abdominal_ct/

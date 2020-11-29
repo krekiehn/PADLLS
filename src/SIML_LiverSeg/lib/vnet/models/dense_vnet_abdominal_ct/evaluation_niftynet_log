@@ -1,0 +1,641 @@
+INFO:niftynet:2020-06-15 00:27:23,183: starting segmentation application
+INFO:niftynet:2020-06-15 00:27:23,184: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 00:27:23,184: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 00:27:23,185: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 00:27:23,204: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 00:27:23,204: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 00:27:23,204: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 00:27:23,230: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-15 00:27:23,251: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 00:27:23,251: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 00:27:23,255: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 00:27:23,413: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 00:27:25,383: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 00:27:25,384: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 00:27:25,384: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 00:28:19,943: Cleaning up...
+INFO:niftynet:2020-06-15 00:28:19,945: SegmentationApplication stopped (time in second 54.55).
+WARNING:niftynet:2020-06-15 00:28:19,945: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 00:28:19,945: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-15 00:46:02,219: starting segmentation application
+INFO:niftynet:2020-06-15 00:46:02,220: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 00:46:02,221: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 00:46:02,221: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 00:46:02,234: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 00:46:02,235: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 00:46:02,235: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 00:46:02,256: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-15 00:46:02,269: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 00:46:02,270: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 00:46:02,273: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 00:46:02,388: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 00:46:03,778: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 00:46:03,778: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 00:46:03,779: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 00:46:46,215: Cleaning up...
+INFO:niftynet:2020-06-15 00:46:46,217: SegmentationApplication stopped (time in second 42.42).
+WARNING:niftynet:2020-06-15 00:46:46,217: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 00:46:46,218: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-15 00:50:46,010: starting segmentation application
+INFO:niftynet:2020-06-15 00:50:46,011: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 00:50:46,011: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 00:50:46,012: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 00:50:46,029: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 00:50:46,029: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 00:50:46,030: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 00:50:46,045: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-15 00:50:46,064: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 00:50:46,064: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 00:50:46,068: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 00:50:46,190: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 00:50:47,651: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 00:50:47,651: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 00:50:47,652: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 00:51:35,646: Cleaning up...
+INFO:niftynet:2020-06-15 00:51:35,648: SegmentationApplication stopped (time in second 47.99).
+WARNING:niftynet:2020-06-15 00:51:35,649: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 00:51:35,650: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-15 01:08:05,448: starting segmentation application
+INFO:niftynet:2020-06-15 01:08:05,450: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 01:08:05,450: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 01:08:05,451: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 01:08:05,465: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 01:08:05,465: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 01:08:05,465: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 01:08:05,486: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-15 01:08:05,504: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 01:08:05,505: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 01:08:05,509: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 01:08:05,630: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 01:08:07,526: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 01:08:07,527: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 01:08:07,527: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 01:09:01,265: Cleaning up...
+INFO:niftynet:2020-06-15 01:09:01,266: SegmentationApplication stopped (time in second 53.73).
+WARNING:niftynet:2020-06-15 01:09:01,267: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 01:09:01,267: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-15 01:18:04,363: starting segmentation application
+INFO:niftynet:2020-06-15 01:18:04,363: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 01:18:04,364: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 01:18:04,364: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 01:18:04,379: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 01:18:04,379: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 01:18:04,380: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 01:18:04,403: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-15 01:18:04,411: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 01:18:04,412: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 01:18:04,415: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 01:18:04,537: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 01:18:06,590: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 01:18:06,591: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 01:18:06,591: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 01:19:02,429: Cleaning up...
+INFO:niftynet:2020-06-15 01:19:02,429: SegmentationApplication stopped (time in second 55.84).
+WARNING:niftynet:2020-06-15 01:19:02,430: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 01:19:02,430: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-15 10:02:12,815: starting segmentation application
+INFO:niftynet:2020-06-15 10:02:12,817: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 10:02:12,817: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 10:02:12,818: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 10:02:12,841: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 10:02:12,842: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 10:02:12,842: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 10:02:12,869: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-15 10:02:12,878: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 10:02:12,878: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 10:02:12,885: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 10:02:13,027: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 10:02:15,374: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 10:02:15,374: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 10:02:15,374: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 10:03:21,607: Cleaning up...
+INFO:niftynet:2020-06-15 10:03:21,608: SegmentationApplication stopped (time in second 66.22).
+WARNING:niftynet:2020-06-15 10:03:21,609: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 10:03:21,609: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-15 10:05:30,770: starting segmentation application
+INFO:niftynet:2020-06-15 10:05:30,771: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 10:05:30,771: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 10:05:30,772: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 10:05:30,793: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 10:05:30,793: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 10:05:30,793: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 10:05:30,811: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-15 10:05:30,825: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 10:05:30,826: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 10:05:30,830: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 10:05:30,958: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 10:05:33,252: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 10:05:33,252: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 10:05:33,253: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 10:06:28,699: Cleaning up...
+INFO:niftynet:2020-06-15 10:06:28,701: SegmentationApplication stopped (time in second 55.44).
+WARNING:niftynet:2020-06-15 10:06:28,703: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 10:06:28,705: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-15 11:17:59,492: starting segmentation application
+INFO:niftynet:2020-06-15 11:17:59,493: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-15 11:17:59,494: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-15 11:17:59,494: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-15 11:17:59,512: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-15 11:17:59,512: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-15 11:17:59,513: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-15 11:17:59,533: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-15 11:17:59,540: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-15 11:17:59,541: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-15 11:17:59,545: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-15 11:17:59,712: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-15 11:18:02,017: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-15 11:18:02,017: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-15 11:18:02,017: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-15 11:18:57,168: Cleaning up...
+INFO:niftynet:2020-06-15 11:18:57,170: SegmentationApplication stopped (time in second 55.14).
+WARNING:niftynet:2020-06-15 11:18:57,170: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-15 11:18:57,171: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 00:18:57,518: starting segmentation application
+INFO:niftynet:2020-06-16 00:18:57,519: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 00:18:57,520: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 00:18:57,521: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 00:18:57,549: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 00:18:57,549: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 00:18:57,550: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 00:18:57,578: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-16 00:18:57,589: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 00:18:57,590: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 00:18:57,595: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 00:18:57,733: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 00:18:59,979: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 00:18:59,980: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 00:18:59,981: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-16 00:19:57,146: Cleaning up...
+INFO:niftynet:2020-06-16 00:19:57,146: SegmentationApplication stopped (time in second 57.15).
+WARNING:niftynet:2020-06-16 00:19:57,147: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 00:19:57,147: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 00:33:34,526: starting segmentation application
+INFO:niftynet:2020-06-16 00:33:34,526: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 00:33:34,527: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 00:33:34,527: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 00:33:34,542: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 00:33:34,542: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 00:33:34,542: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 00:33:34,563: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-16 00:33:34,569: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 00:33:34,569: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 00:33:34,573: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 00:33:34,694: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 00:33:36,846: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 00:33:36,846: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 00:33:36,847: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-16 00:34:32,075: Cleaning up...
+INFO:niftynet:2020-06-16 00:34:32,076: SegmentationApplication stopped (time in second 55.22).
+WARNING:niftynet:2020-06-16 00:34:32,077: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 00:34:32,077: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 00:40:10,346: starting segmentation application
+INFO:niftynet:2020-06-16 00:40:10,346: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 00:40:10,347: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 00:40:10,347: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 00:40:10,361: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 00:40:10,361: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 00:40:10,361: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 00:40:10,383: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-16 00:40:10,391: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 00:40:10,391: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 00:40:10,399: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 00:40:10,527: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 00:40:11,965: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 00:40:11,965: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 00:40:11,965: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-16 00:40:11,972: Looking for the set of unique discrete labels from input label using 131 subjects
+INFO:niftynet:2020-06-16 00:40:23,974: Looking for the set of unique discrete labels from input inferred using 131 subjects
+WARNING:niftynet:2020-06-16 00:40:38,513: moved existing histogram reference file
+ from /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/histogram_ref_file.txt to /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/histogram_ref_file.txt.backup
+INFO:niftynet:2020-06-16 00:41:29,071: Cleaning up...
+INFO:niftynet:2020-06-16 00:41:29,072: SegmentationApplication stopped (time in second 50.55).
+WARNING:niftynet:2020-06-16 00:41:29,072: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 00:41:29,073: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 00:43:00,744: starting segmentation application
+INFO:niftynet:2020-06-16 00:43:00,745: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 00:43:00,745: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 00:43:00,746: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 00:43:00,764: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 00:43:00,765: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 00:43:00,765: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 00:43:00,788: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-16 00:43:00,796: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 00:43:00,796: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 00:43:00,800: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 00:43:00,920: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 00:43:02,892: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 00:43:02,893: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 00:43:02,893: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-16 00:43:02,895: label mapping ready for label:('label',), 9 classes
+INFO:niftynet:2020-06-16 00:43:02,895: label mapping ready for inferred:('inferred',), 9 classes
+INFO:niftynet:2020-06-16 00:43:58,145: Cleaning up...
+INFO:niftynet:2020-06-16 00:43:58,146: SegmentationApplication stopped (time in second 55.25).
+WARNING:niftynet:2020-06-16 00:43:58,147: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 00:43:58,148: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 00:51:07,470: starting segmentation application
+INFO:niftynet:2020-06-16 00:51:07,471: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 00:51:07,472: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 00:51:07,472: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 00:51:07,485: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 00:51:07,485: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 00:51:07,486: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 00:51:07,510: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-16 00:51:07,521: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 00:51:07,522: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 00:51:07,527: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 00:51:07,672: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 00:51:09,694: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 00:51:09,694: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 00:51:09,694: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-16 00:51:55,233: Cleaning up...
+INFO:niftynet:2020-06-16 00:51:55,233: SegmentationApplication stopped (time in second 45.53).
+WARNING:niftynet:2020-06-16 00:51:55,233: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 00:51:55,234: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 00:54:21,432: starting segmentation application
+INFO:niftynet:2020-06-16 00:54:21,434: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 00:54:21,434: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 00:54:21,435: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 00:54:21,454: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 00:54:21,454: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 00:54:21,455: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 00:54:21,472: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-16 00:54:21,478: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 00:54:21,479: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 00:54:21,482: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 00:54:21,610: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 00:54:23,239: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 00:54:23,239: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 00:54:23,240: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-16 00:55:11,391: Cleaning up...
+INFO:niftynet:2020-06-16 00:55:11,393: SegmentationApplication stopped (time in second 48.14).
+WARNING:niftynet:2020-06-16 00:55:11,394: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 00:55:11,394: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 01:01:33,820: starting segmentation application
+INFO:niftynet:2020-06-16 01:01:33,822: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 01:01:33,822: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 01:01:33,823: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 01:01:33,841: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 01:01:33,841: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 01:01:33,842: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 01:01:33,856: [inferred] using existing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv, skipped filenames search
+WARNING:niftynet:2020-06-16 01:01:33,863: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 01:01:33,864: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 01:01:33,868: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 01:01:34,023: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 01:01:36,176: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 01:01:36,176: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 01:01:36,176: Image reader: loading 131 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2020-06-16 01:02:35,671: Cleaning up...
+INFO:niftynet:2020-06-16 01:02:35,672: SegmentationApplication stopped (time in second 59.48).
+WARNING:niftynet:2020-06-16 01:02:35,672: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 01:02:35,673: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-16 01:07:59,876: starting segmentation application
+INFO:niftynet:2020-06-16 01:07:59,878: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 01:07:59,878: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 01:07:59,879: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 01:07:59,899: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-16 01:07:59,899: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-16 01:07:59,927: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 01:07:59,928: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 01:07:59,928: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 01:07:59,947: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-16 01:07:59,968: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 01:07:59,969: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 01:07:59,973: 
+
+Number of subjects 262, input section names: ['subject_id', 'ct', 'seg', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (33.21%),
+-- validation 44 cases (16.79%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 01:08:00,108: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+CRITICAL:niftynet:2020-06-16 01:08:02,246: Empty filename lists, please check the csv files. (removing csv_file keyword if it is in the config file to automatically search folders and generate new csv files again)
+
+Please note in the matched file names, each subject id are created by removing all keywords listed `filename_contains` in the config.
+
+E.g., `filename_contains=foo, bar` will match file foo_subject42_bar.nii.gz, and the subject id is _subject42_.
+INFO:niftynet:2020-06-16 01:10:21,757: starting segmentation application
+INFO:niftynet:2020-06-16 01:10:21,759: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 01:10:21,759: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 01:10:21,763: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 01:10:21,783: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-16 01:10:21,784: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-16 01:10:21,785: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-16 01:10:21,819: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 01:10:21,820: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 01:10:21,820: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 01:10:21,839: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-16 01:10:21,869: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 01:10:21,870: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 01:10:21,876: 
+
+Number of subjects 262, input section names: ['subject_id', 'ct', 'seg', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (33.21%),
+-- validation 44 cases (16.79%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 01:10:22,115: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+CRITICAL:niftynet:2020-06-16 01:10:24,534: Empty filename lists, please check the csv files. (removing csv_file keyword if it is in the config file to automatically search folders and generate new csv files again)
+
+Please note in the matched file names, each subject id are created by removing all keywords listed `filename_contains` in the config.
+
+E.g., `filename_contains=foo, bar` will match file foo_subject42_bar.nii.gz, and the subject id is _subject42_.
+INFO:niftynet:2020-06-16 01:11:57,873: starting segmentation application
+INFO:niftynet:2020-06-16 01:11:57,875: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 01:11:57,876: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 01:11:57,877: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 01:11:57,898: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-16 01:11:57,898: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-16 01:11:57,898: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-16 01:11:57,920: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 01:11:57,920: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 01:11:57,921: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 01:11:57,939: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-16 01:11:57,956: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 01:11:57,956: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 01:11:57,961: 
+
+Number of subjects 262, input section names: ['subject_id', 'ct', 'seg', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (33.21%),
+-- validation 44 cases (16.79%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 01:11:58,115: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+CRITICAL:niftynet:2020-06-16 01:12:00,569: Empty filename lists, please check the csv files. (removing csv_file keyword if it is in the config file to automatically search folders and generate new csv files again)
+
+Please note in the matched file names, each subject id are created by removing all keywords listed `filename_contains` in the config.
+
+E.g., `filename_contains=foo, bar` will match file foo_subject42_bar.nii.gz, and the subject id is _subject42_.
+INFO:niftynet:2020-06-16 01:17:50,266: starting segmentation application
+INFO:niftynet:2020-06-16 01:17:50,267: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-16 01:17:50,267: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-16 01:17:50,268: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-16 01:17:50,287: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-16 01:17:50,288: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-16 01:17:50,288: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-16 01:17:50,304: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-16 01:17:50,305: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-16 01:17:50,305: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-16 01:17:50,319: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-16 01:17:50,337: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-16 01:17:50,337: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-16 01:17:50,342: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'seg', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-16 01:17:50,531: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-16 01:17:53,238: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-16 01:17:53,239: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-16 01:17:53,239: Image reader: loading 131 subjects from sections ('seg',) as input [inferred]
+INFO:niftynet:2020-06-16 01:18:52,187: Cleaning up...
+INFO:niftynet:2020-06-16 01:18:52,188: SegmentationApplication stopped (time in second 58.94).
+WARNING:niftynet:2020-06-16 01:18:52,188: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-16 01:18:52,189: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-17 00:13:23,306: starting segmentation application
+INFO:niftynet:2020-06-17 00:13:23,307: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-17 00:13:23,307: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-17 00:13:23,308: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-17 00:13:23,325: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-17 00:13:23,326: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-17 00:13:23,326: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-17 00:13:23,348: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-17 00:13:23,349: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-17 00:13:23,351: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-17 00:13:23,367: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-17 00:13:23,386: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-17 00:13:23,386: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-17 00:13:23,392: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'seg', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-17 00:13:23,521: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-17 00:13:25,840: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 00:13:25,841: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 00:13:25,841: Image reader: loading 131 subjects from sections ('seg',) as input [inferred]
+INFO:niftynet:2020-06-17 00:14:19,297: Cleaning up...
+INFO:niftynet:2020-06-17 00:14:19,297: SegmentationApplication stopped (time in second 53.44).
+WARNING:niftynet:2020-06-17 00:14:19,298: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-17 00:14:19,299: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+INFO:niftynet:2020-06-17 00:27:16,771: starting segmentation application
+INFO:niftynet:2020-06-17 00:27:16,773: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv" instead.
+INFO:niftynet:2020-06-17 00:27:16,773: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv".
+INFO:niftynet:2020-06-17 00:27:16,774: [ct] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/ct.csv
+INFO:niftynet:2020-06-17 00:27:16,795: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv" instead.
+INFO:niftynet:2020-06-17 00:27:16,795: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv".
+INFO:niftynet:2020-06-17 00:27:16,796: [seg] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/seg.csv
+INFO:niftynet:2020-06-17 00:27:16,824: `csv_file = ` not found, writing to "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv" instead.
+INFO:niftynet:2020-06-17 00:27:16,825: Overwriting existing: "/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv".
+INFO:niftynet:2020-06-17 00:27:16,825: [label] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/label.csv
+INFO:niftynet:2020-06-17 00:27:16,850: [inferred] search file folders, writing csv file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/segmentation_output/inferred.csv
+WARNING:niftynet:2020-06-17 00:27:16,872: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/io/image_sets_partitioner.py:378: The name tf.logging.warning is deprecated. Please use tf.compat.v1.logging.warning instead.
+
+WARNING:niftynet:2020-06-17 00:27:16,873: Loading from existing partitioning file /Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2020-06-17 00:27:16,882: 
+
+Number of subjects 131, input section names: ['subject_id', 'ct', 'seg', 'label', 'inferred']
+Dataset partitioning:
+-- training 87 cases (66.41%),
+-- validation 44 cases (33.59%),
+-- inference 0 cases (0.00%).
+
+WARNING:niftynet:2020-06-17 00:27:17,124: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/layer/base_layer.py:26: The name tf.make_template is deprecated. Please use tf.compat.v1.make_template instead.
+
+INFO:niftynet:2020-06-17 00:27:20,427: Image reader: loading 131 subjects from sections ('ct',) as input [image]
+INFO:niftynet:2020-06-17 00:27:20,428: Image reader: loading 131 subjects from sections ('label',) as input [label]
+INFO:niftynet:2020-06-17 00:27:20,428: Image reader: loading 131 subjects from sections ('seg',) as input [inferred]
+INFO:niftynet:2020-06-17 00:28:35,405: Cleaning up...
+INFO:niftynet:2020-06-17 00:28:35,406: SegmentationApplication stopped (time in second 74.96).
+WARNING:niftynet:2020-06-17 00:28:35,407: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:149: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:niftynet:2020-06-17 00:28:35,407: From /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/niftynet/__init__.py:151: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+

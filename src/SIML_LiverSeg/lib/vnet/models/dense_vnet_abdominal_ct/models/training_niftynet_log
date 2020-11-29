@@ -1,0 +1,2 @@
+CRITICAL:niftynet:2020-06-14 02:03:35,342: Failed to get iteration number from checkpoint path (/Users/jayasuriyasenthilvelan/niftynet/models/dense_vnet_abdominal_ct/models/models),
+please check config parameter: model_dir, and initial_iter

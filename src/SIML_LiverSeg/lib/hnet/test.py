@@ -1,4 +1,6 @@
 from __future__ import print_function
+
+import glob
 import sys
 print('adding other stuffs');
 sys.path.insert(0,'./SIML_LiverSeg/lib/hnet/Keras-2.0.8')
@@ -48,7 +50,9 @@ def predict(args):
     if not Path(args.save_path).exists():
         os.mkdir(args.save_path)
 
-    for id in xrange(70):
+    # no_jobs = len(os.listdir(os.path.dirname(args.data)))
+    no_jobs =  len(glob.glob(args.data + '*.nii'))
+    for id in xrange(no_jobs):
         print('-' * 30)
         print('Loading model and preprocessing test data...' + str(id))
         print('-' * 30)

@@ -20,16 +20,16 @@ HNET_DATA_OUTPUT = './data/hnetResults/'
 FINAL_OUTPUT = './output/'
 print('Created constants')
 # Create vnet input data
-tmpHeadImage = nib.load(NII_HEADER_FILE)
-folderNames = natsorted(glob.glob(DCM_DATA_INPUT))
-index = 0
-for folder in folderNames:
-    dcmArray = dcmToNumpy(folder)
-    procArray = bioNumpyToVnet(dcmArray)
-    niiImage = nib.Nifti1Image(procArray, tmpHeadImage.affine, tmpHeadImage.header)
-    nib.save(niiImage, VNET_DATA_INPUT + 'test-volume-' + str(index))
-    print('Saved test-volume-' + str(index))
-    index = index + 1
+# tmpHeadImage = nib.load(NII_HEADER_FILE)
+# folderNames = natsorted(glob.glob(DCM_DATA_INPUT))
+# index = 0
+# for folder in folderNames:
+#     dcmArray = dcmToNumpy(folder)
+#     procArray = bioNumpyToVnet(dcmArray)
+#     niiImage = nib.Nifti1Image(procArray, tmpHeadImage.affine, tmpHeadImage.header)
+#     nib.save(niiImage, VNET_DATA_INPUT + 'test-volume-' + str(index))
+#     print('Saved test-volume-' + str(index))
+#     index = index + 1
 print('Created Vnet input data')
 # Run vnet
 os.system('net_segment inference -c ' + VNET_CONFIG)

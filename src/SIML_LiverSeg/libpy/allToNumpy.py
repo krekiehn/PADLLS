@@ -8,6 +8,7 @@ def dcmToNumpy(folderName):
         for filename in fileList:
             if ".dcm" in filename.lower():  # check whether the file's DICOM
                 lstFilesDCM.append(os.path.join(dirName,filename))
+    lstFilesDCM.sort()
     # Get ref file
     RefDs = pydicom.read_file(lstFilesDCM[0])
     # Load dimensions based on the number of rows, columns, and slices (along the Z axis)

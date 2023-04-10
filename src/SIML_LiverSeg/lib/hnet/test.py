@@ -30,7 +30,7 @@ parser = argparse.ArgumentParser(description='Keras DenseUnet Test')
 #  data folder
 parser.add_argument('-data', type=str, default='/root/SIML_LiverSeg/data/hnetInputData/test-volume-', help='test images')
 parser.add_argument('-liver_path', type=str, default='/root/SIML_LiverSeg/data/livermask/')
-parser.add_argument('-save_path', type=str, default='/root/SIML_LiverSeg/data/hnetResults')
+parser.add_argument('-save_path', type=str, default='/root/SIML_LiverSeg/data/hnetResults/')
 #  other paras
 parser.add_argument('-b', type=int, default=1)
 parser.add_argument('-input_size', type=int, default=512)

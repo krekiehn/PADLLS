@@ -22,6 +22,7 @@ def dcmToNumpy(folderName):
     # loop through all the DICOM files
     for filenameDCM in lstFilesDCM:
         # read the file
+        print(filenameDCM)
         ds = pydicom.read_file(filenameDCM)
         # store the raw image data
         ArrayDicom[:, :, lstFilesDCM.index(filenameDCM)] = ds.pixel_array 
